@@ -1,39 +1,4 @@
 <?php 
-   /* header('Content-Type: application/json');
-    if($_SERVER["REQUEST_METHOD"]=="POST"){
-        $nom = htmlspecialchars(trim($_POST["name"]));
-        $email = htmlspecialchars(trim($_POST["email"]));
-        $sujet = htmlspecialchars(trim($_POST["subject"]));
-        $message = htmlspecialchars(trim($_POST["message"]));
-
-        if(empty($nom) || empty($email) || empty($sujet) || empty($message)){
-            echo json_encode(["status" => "error","message"=>"Tous les champs sont obligatoire"]);
-            exit;
-        }
-        if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
-            echo json_encode(["status" => "error","message"=>"Adresse mail invalide"]);
-            exit;
-        }
-
-        $to = "apr.a3p@gmail.com";
-        $subject = "[NOUVEAU MESSAGE] de la parrt de $nom";
-        $headers = "From: $email\r\n";
-        $headers .= "Reply-To: $email\r\n";
-        $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
-
-        $body = "Nom: $nom\n";
-        $body .= "Email: $email\n";
-        $body .= "Sujet: $subject\n";
-        $body .= "Message: $message\n";
-
-        if(mail($to, $subject, $body, $headers)){
-            echo json_encode(["status" =>"success", "message" => "Votre message a bien été envoyé"]);
-        }else{
-            echo json_encode(["status" => "error", "message" => "Une erreur est survenue"]);
-        }
-    }else{
-        echo json_encode(["status" => "error", "message" => "Méthode non autorisée"]);
-    }*/
     
 header('Content-Type: application/json');
 
