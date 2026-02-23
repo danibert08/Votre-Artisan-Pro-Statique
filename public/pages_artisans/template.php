@@ -1,5 +1,6 @@
 <?php
 $canonical = "https://{$subdomain}.votreartisanpro.fr/";
+
 ?>
 <!DOCTYPE html>
 <html lang="fr">

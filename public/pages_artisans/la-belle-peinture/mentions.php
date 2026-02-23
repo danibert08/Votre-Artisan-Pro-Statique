@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../assets/reset.css" class="css">
-    <link rel="stylesheet" href="../../assets/assets_artisans/style.css" class="css">
+    <link rel="stylesheet" href="../css/reset.css" class="css">
+    <link rel="stylesheet" href="../css/assets_artisans/style.css" class="css">
     <title>La Belle Peinture - Mentions Légales</title>
 </head>
 <body class="purple">  
@@ -63,7 +63,7 @@
     </main>
     <div class="en-tete__contact">
                 <div class="button">
-                    <img class="en-tete__contact_icone" src="../../assets/icones/telephone.svg" alt=""> 
+                    <img class="en-tete__contact_icone" src="../icones/telephone.svg" alt=""> 
                     <a class="en-tete__contact-text" href="index.php">             
                         Retour 
                     </a>

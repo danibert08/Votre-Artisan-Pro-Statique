@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Belle Peinture</title>
-    <link rel="stylesheet" href="css/reset.css" class="css">
-    <link rel="stylesheet" href="css/style.css" class="css">
+    <link rel="stylesheet" href="../css/reset.css" class="css">
+    <link rel="stylesheet" href="../css/style.css" class="css">
 </head>
 <body id="body" class="purple">
     <div class="container"> 
@@ -23,7 +23,7 @@
 
             <div id="accueil" class="en-tete">
                 <div class="en-tete__hero">
-                    <img class="en-tete__hero_hero-img" src="la-belle-peinture/images/photos1/m6.avif" alt="" >
+                    <img class="en-tete__hero_hero-img" src="images/photos1/m6.avif" alt="" >
                 </div>
                 <!--<div class="en-tete__logo">
                     <img class="en-tete__logo_logo-img" src="assets/photos/logo/logo.jpeg"  alt="">
@@ -50,7 +50,7 @@
 
             <div id="services1" class="en-tete__contact">
                 <div class="button" >
-                    <img class="en-tete__contact_icone" src="../../assets/icones/telephone.svg" alt=""> 
+                    <img class="en-tete__contact_icone" src="../icones/telephone.svg" alt=""> 
                     <a class="en-tete__contact-text" href="tel:+33601753824">             
                         06 01 75 38 24 
                     </a>
@@ -74,30 +74,30 @@
                                 <!--     Main1 Pictures     -->
 
                     <p class="services__lambda_photos">
-                        <img class="photo photo1" src="la-belle-peinture/images/photos1/m2.jpeg" width="100" alt="">                  
-                        <img class="photo photo2" src="la-belle-peinture/images/photos1/m1.jpeg"  width="100" alt="">
+                        <img class="photo photo1" src="images/photos1/m2.jpeg" width="100" alt="">                  
+                        <img class="photo photo2" src="images/photos1/m1.jpeg"  width="100" alt="">
                     </p>
                     <p class="services__lambda_photos">
-                        <img class="photo photo3" src="la-belle-peinture/images/photos1/m3.jpeg"  width="100" alt="">               
-                        <img class="photo photo4" src="la-belle-peinture/images/photos1/m4.jpeg" width="100" alt="">
+                        <img class="photo photo3" src="images/photos1/m3.jpeg"  width="100" alt="">               
+                        <img class="photo photo4" src="images/photos1/m4.jpeg" width="100" alt="">
                     </p>
                     <p class="services__lambda_photos">
-                        <img class="photo photo5" src="la-belle-peinture/images/photos1/m5.avif" width="100" alt="">               
-                        <img class="photo photo6" src="la-belle-peinture/images/photos1/m7.avif" width="100" alt="">
+                        <img class="photo photo5" src="images/photos1/m5.avif" width="100" alt="">               
+                        <img class="photo photo6" src="images/photos1/m7.avif" width="100" alt="">
                     </p>
                     <p class="services__lambda_photos">
-                        <img class="photo photo7" src="la-belle-peinture/images/photos1/m8.avif"  width="100" alt="">              
-                        <img class="photo photo8" src="la-belle-peinture/images/photos1/m9.avif"  width="100" alt="">
+                        <img class="photo photo7" src="images/photos1/m8.avif"  width="100" alt="">              
+                        <img class="photo photo8" src="images/photos1/m9.avif"  width="100" alt="">
                     </p>
                     <p class="services__lambda_photos">
-                        <img class="photo photo9" src="la-belle-peinture/images/photos1/m1.jpeg"  width="100" alt="">               
-                        <img class="photo photo10" src="la-belle-peinture/images/photos1/m10.avif" width="100" alt="">
+                        <img class="photo photo9" src="images/photos1/m1.jpeg"  width="100" alt="">               
+                        <img class="photo photo10" src="images/photos1/m10.avif" width="100" alt="">
                     </p>
                 </div>            
             </section>   
             <div class="en-tete__contact">
                 <div class="button" >
-                    <img class="en-tete__contact_icone" src="../../assets/icones/telephone.svg" alt=""> 
+                    <img class="en-tete__contact_icone" src="../icones/telephone.svg" alt=""> 
                     <a class="en-tete__contact-text" href="tel:+33601753824">             
                         06 01 75 38 24 
                     </a>
@@ -140,7 +140,7 @@
             </section>
             <div id="contact" class="en-tete__contact">
                 <div class="button" >
-                    <img class="en-tete__contact_icone" src="../../assets/icones/telephone.svg" alt=""> 
+                    <img class="en-tete__contact_icone" src="../icones/telephone.svg" alt=""> 
                     <a class="en-tete__contact-text" href="tel:+33601753824">             
                         06 01 75 38 24 
                     </a>
@@ -176,13 +176,13 @@
                 <p class="socialmedia-title">Pour me suivre :</p>
                 <div class="socialmedia-icons">
                     <a class="socialmedia-link insta"  href="#">             
-                        <img class="socialmedia-img" src="../../assets/icones/icons8-instagram-48.svg"  alt=""> 
+                        <img class="socialmedia-img" src="../icones/icons8-instagram-48.svg"  alt=""> 
                     </a>
                     <a class="socialmedia-link tictac"  href="#">             
-                        <img class="socialmedia-img" src="../../assets/icones/icons8-tic-tac-50.svg" alt=""> 
+                        <img class="socialmedia-img" src="../icones/icons8-tic-tac-50.svg" alt=""> 
                     </a>
                     <a class="socialmedia-link fbook"  href="#">             
-                        <img class="socialmedia-img" src="../../assets/icones/icons8-facebook-48.svg"  alt=""> 
+                        <img class="socialmedia-img" src="../icones/icons8-facebook-48.svg"  alt=""> 
                     </a>
                 </div>
             </div> 

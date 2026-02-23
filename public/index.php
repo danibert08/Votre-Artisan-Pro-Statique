@@ -1,78 +1,93 @@
 <?php
 declare(strict_types=1);
 
-$domain = "votreartisanpro.fr";
+/*
+|--------------------------------------------------------------------------
+| Configuration
+|--------------------------------------------------------------------------
+*/
+
+$rootDomain = 'votreartisanpro.fr';
+$baseDir    = __DIR__ . '/pages_artisans';
+
+/*
+|--------------------------------------------------------------------------
+| Détection du sous-domaine
+|--------------------------------------------------------------------------
+*/
+
 $host = strtolower($_SERVER['HTTP_HOST'] ?? '');
 
-// Domaine principal
-if ($host === $domain || $host === "www.$domain") {
-    require "home.php";
-    exit;
-}
+// Suppression du port éventuel (localhost:8000)
+$host = explode(':', $host)[0];
 
-// Extraction sous-domaine
-$subdomain = str_replace(".$domain", "", $host);
-
-// Validation stricte du sous-domaine
-if (!preg_match('/^[a-z0-9\-]{2,50}$/', $subdomain)) {
+if ($host === $rootDomain || $host === "www.$rootDomain") {
     http_response_code(404);
-    exit("Artisan non trouvé.");
+    exit('Page non disponible.');
 }
-echo($subdomain);
+
+// Mode local (facultatif)
+if ($host === 'localhost' || $host === '127.0.0.1') {
+    $subdomain = $_GET['subdomain'] ?? null;
+} else {
+    if (!str_ends_with($host, '.' . $rootDomain)) {
+        http_response_code(400);
+        exit('Domaine invalide.');
+    }
+
+    $subdomain = substr($host, 0, -strlen('.' . $rootDomain));
+}
+
+/*
+|--------------------------------------------------------------------------
+| Validation sécurité
+|--------------------------------------------------------------------------
+*/
+
+// Uniquement lettres, chiffres, tirets
+if (!$subdomain || !preg_match('/^[a-z0-9-]{2,50}$/', $subdomain)) {
+    http_response_code(404);
+    exit('Artisan invalide.');
+}
+
+/*
+|--------------------------------------------------------------------------
+| Construction du chemin sécurisé
+|--------------------------------------------------------------------------
+*/
+
+$artisanDir = realpath($baseDir . '/' . $subdomain);
+
+// Vérifie que le dossier existe
+if ($artisanDir === false || !str_starts_with($artisanDir, realpath($baseDir))) {
+    http_response_code(404);
+    exit('Artisan introuvable.');
+}
+
+// Fichier index prioritaire
+$indexFile = $artisanDir . '/index.php';
+
+if (!is_file($indexFile)) {
+    http_response_code(404);
+    exit('Page artisan inexistante.');
+}
+
+/*
+|--------------------------------------------------------------------------
+| Sécurité HTTP headers
+|--------------------------------------------------------------------------
+*/
+
+header('X-Frame-Options: SAMEORIGIN');
+header('X-Content-Type-Options: nosniff');
+header('Referrer-Policy: strict-origin-when-cross-origin');
+
+/*
+|--------------------------------------------------------------------------
+| Inclusion de la page
+|--------------------------------------------------------------------------
+*/
+
+readfile($indexFile);
 exit;
-// Chemin cache HTML
-$cacheDir = __DIR__ . "/cache/";
-$cacheFile = $cacheDir . $subdomain . ".html";
-$cacheDuration = 3600; // 1 heure
 
-if (!is_dir($cacheDir)) mkdir($cacheDir, 0755, true);
-
-// Serve le cache si valide
-if (file_exists($cacheFile) && (time() - filemtime($cacheFile)) < $cacheDuration) {
-    readfile($cacheFile);
-    exit;
-}
-
-// ======================
-// Définition artisan (temporaire)
-// Plus tard remplacer par DB
-// ======================
-$artisans = [
-    "ypria" => [
-        "nom" => "Ypria Couverture",
-        "ville" => "Paris",
-        "metier" => "Couvreur",
-        "telephone" => "06 00 00 00 01",
-        "description" => "Spécialiste toiture et rénovation."
-    ],
-    "maquette" => [
-        "nom" => "Maquette BTP",
-        "ville" => "Lyon",
-        "metier" => "Maçon",
-        "telephone" => "06 00 00 00 02",
-        "description" => "Travaux de maçonnerie générale."
-    ],
-    // Ajouter d’autres artisans ici
-];
-
-// Artisan existe ?
-if (!isset($artisans[$subdomain])) {
-    http_response_code(404);
-    require "404.php";
-    exit;
-}
-
-$data = $artisans[$subdomain];
-
-// ======================
-// Génération page + cache
-// ======================
-ob_start();
-require "pages_artisans/template.php";
-$html = ob_get_clean();
-
-// Sauvegarde cache
-file_put_contents($cacheFile, $html);
-
-// Affiche
-echo $html;
