@@ -199,7 +199,7 @@
             </nav>
         </main>
         <footer class="footer-nav">
-            <a class="mentions-link" href="mentions_legales.php">Mentions légales</a>
+            <a class="mentions-link" href="/pages_artisans/la-belle-peinure/mentions_legales.php">Mentions légales</a>
         </footer>
     </div>
 </body>
