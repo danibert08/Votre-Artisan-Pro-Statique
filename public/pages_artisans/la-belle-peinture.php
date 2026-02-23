@@ -23,7 +23,7 @@
 
             <div id="accueil" class="en-tete">
                 <div class="en-tete__hero">
-                    <img class="en-tete__hero_hero-img" src="images/photos1/m6.avif" alt="" >
+                    <img class="en-tete__hero_hero-img" src="la-belle-peinture/images/photos1/m6.avif" alt="" >
                 </div>
                 <!--<div class="en-tete__logo">
                     <img class="en-tete__logo_logo-img" src="assets/photos/logo/logo.jpeg"  alt="">
@@ -74,24 +74,24 @@
                                 <!--     Main1 Pictures     -->
 
                     <p class="services__lambda_photos">
-                        <img class="photo photo1" src="images/photos1/m2.jpeg" width="100" alt="">                  
-                        <img class="photo photo2" src="images/photos1/m1.jpeg"  width="100" alt="">
+                        <img class="photo photo1" src="la-belle-peinture/images/photos1/m2.jpeg" width="100" alt="">                  
+                        <img class="photo photo2" src="la-belle-peinture/images/photos1/m1.jpeg"  width="100" alt="">
                     </p>
                     <p class="services__lambda_photos">
-                        <img class="photo photo3" src="images/photos1/m3.jpeg"  width="100" alt="">               
-                        <img class="photo photo4" src="images/photos1/m4.jpeg" width="100" alt="">
+                        <img class="photo photo3" src="la-belle-peinture/images/photos1/m3.jpeg"  width="100" alt="">               
+                        <img class="photo photo4" src="la-belle-peinture/images/photos1/m4.jpeg" width="100" alt="">
                     </p>
                     <p class="services__lambda_photos">
-                        <img class="photo photo5" src="images/photos1/m5.avif" width="100" alt="">               
-                        <img class="photo photo6" src="images/photos1/m7.avif" width="100" alt="">
+                        <img class="photo photo5" src="la-belle-peinture/images/photos1/m5.avif" width="100" alt="">               
+                        <img class="photo photo6" src="la-belle-peinture/images/photos1/m7.avif" width="100" alt="">
                     </p>
                     <p class="services__lambda_photos">
-                        <img class="photo photo7" src="images/photos1/m8.avif"  width="100" alt="">              
-                        <img class="photo photo8" src="images/photos1/m9.avif"  width="100" alt="">
+                        <img class="photo photo7" src="la-belle-peinture/images/photos1/m8.avif"  width="100" alt="">              
+                        <img class="photo photo8" src="la-belle-peinture/images/photos1/m9.avif"  width="100" alt="">
                     </p>
                     <p class="services__lambda_photos">
-                        <img class="photo photo9" src="images/photos1/m1.jpeg"  width="100" alt="">               
-                        <img class="photo photo10" src="images/photos1/m10.avif" width="100" alt="">
+                        <img class="photo photo9" src="la-belle-peinture/images/photos1/m1.jpeg"  width="100" alt="">               
+                        <img class="photo photo10" src="la-belle-peinture/images/photos1/m10.avif" width="100" alt="">
                     </p>
                 </div>            
             </section>   
