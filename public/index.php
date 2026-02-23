@@ -22,7 +22,7 @@ $host = strtolower($_SERVER['HTTP_HOST'] ?? '');
 $host = explode(':', $host)[0];
 
 if ($host === $rootDomain || $host === "www.$rootDomain") {
-    require __DIR__ . '/homepage.php';
+    require __DIR__ . '/home.php';
     exit;
 }
 
