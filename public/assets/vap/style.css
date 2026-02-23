@@ -1,0 +1,80 @@
+/* Réinitialisation de base */
+body { 
+    margin: 0; font-family: Arial, sans-serif; 
+    text-align: center;
+}
+.logo {
+    width: 100vw;   
+}
+.logo>img{
+    max-width: 80%;
+}
+p{
+    font-size: 1.5rem;
+}
+/* color : #0249AF */
+ /*********************/
+                    /*** form contact ***/
+
+.form-container {
+    margin: 2rem auto 2rem;
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 0 1rem var(--services-box-shadow);
+    width: 100%;
+    max-width: 500px;
+    animation: fadeIn 0.5s ease;
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #333;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.form-group {
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #555;
+    font-size: 1.5rem;
+}
+
+input, textarea {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 1.5rem;
+    transition: all 0.2s ease;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: var(--services-box-shadow);
+    box-shadow: 0 0 0 3px var(--button-box-shadow);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+#form-response {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.success {
+    color: green;
+}
+
+.error {
+    color: red;
+}
