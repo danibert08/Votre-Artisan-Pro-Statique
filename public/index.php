@@ -22,8 +22,8 @@ $host = strtolower($_SERVER['HTTP_HOST'] ?? '');
 $host = explode(':', $host)[0];
 
 if ($host === $rootDomain || $host === "www.$rootDomain") {
-    http_response_code(404);
-    exit('Page non disponible.');
+    require __DIR__ . '/homepage.php';
+    exit;
 }
 
 // Mode local (facultatif)
