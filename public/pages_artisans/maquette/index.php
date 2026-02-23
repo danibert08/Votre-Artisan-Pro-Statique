@@ -251,7 +251,7 @@ Afin de vous proposer un **devis précis et au prix juste**, je me déplace dire
             </nav>
         </main>
         <footer class="footer-nav">
-            <a class="mentions-link" href="mentions.php">Mentions légales</a>
+            <a class="mentions-link" href="mentions_legales.php">Mentions légales</a>
         </footer>
     </div>
     <script src="theme.js" module="javascript" ></script>

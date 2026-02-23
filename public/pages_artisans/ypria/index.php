@@ -233,7 +233,7 @@
             </nav>
         </main>
         <footer class="footer-nav">
-            <a class="mentions-link" href="mentions.php">Mentions légales</a>
+            <a class="mentions-link" href="mentions_legales.php">Mentions légales</a>
         </footer>
     </div>
 </body>
