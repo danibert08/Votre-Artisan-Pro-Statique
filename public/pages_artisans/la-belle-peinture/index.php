@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Belle Peinture</title>
-    <link rel="stylesheet" href="../css/reset.css" class="css">
-    <link rel="stylesheet" href="../css/style.css" class="css">
+    <link rel="stylesheet" href="/pages_artisans/css/reset.css" class="css">
+    <link rel="stylesheet" href="/pages_artisans/css/style.css" class="css">
 </head>
 <body id="body" class="purple">
     <div class="container"> 
@@ -50,7 +50,7 @@
 
             <div id="services1" class="en-tete__contact">
                 <div class="button" >
-                    <img class="en-tete__contact_icone" src="../icones/telephone.svg" alt=""> 
+                    <img class="en-tete__contact_icone" src="/pages_artisans/icones/telephone.svg" alt=""> 
                     <a class="en-tete__contact-text" href="tel:+33601753824">             
                         06 01 75 38 24 
                     </a>
@@ -97,7 +97,7 @@
             </section>   
             <div class="en-tete__contact">
                 <div class="button" >
-                    <img class="en-tete__contact_icone" src="../icones/telephone.svg" alt=""> 
+                    <img class="en-tete__contact_icone" src="/pages_artisans/icones/telephone.svg" alt=""> 
                     <a class="en-tete__contact-text" href="tel:+33601753824">             
                         06 01 75 38 24 
                     </a>
@@ -140,7 +140,7 @@
             </section>
             <div id="contact" class="en-tete__contact">
                 <div class="button" >
-                    <img class="en-tete__contact_icone" src="../icones/telephone.svg" alt=""> 
+                    <img class="en-tete__contact_icone" src="/pages_artisans/icones/telephone.svg" alt=""> 
                     <a class="en-tete__contact-text" href="tel:+33601753824">             
                         06 01 75 38 24 
                     </a>
@@ -176,13 +176,13 @@
                 <p class="socialmedia-title">Pour me suivre :</p>
                 <div class="socialmedia-icons">
                     <a class="socialmedia-link insta"  href="#">             
-                        <img class="socialmedia-img" src="../icones/icons8-instagram-48.svg"  alt=""> 
+                        <img class="socialmedia-img" src="/pages_artisans/icones/icons8-instagram-48.svg"  alt=""> 
                     </a>
                     <a class="socialmedia-link tictac"  href="#">             
-                        <img class="socialmedia-img" src="../icones/icons8-tic-tac-50.svg" alt=""> 
+                        <img class="socialmedia-img" src="/pages_artisans/icones/icons8-tic-tac-50.svg" alt=""> 
                     </a>
                     <a class="socialmedia-link fbook"  href="#">             
-                        <img class="socialmedia-img" src="../icones/icons8-facebook-48.svg"  alt=""> 
+                        <img class="socialmedia-img" src="/pages_artisans/icones/icons8-facebook-48.svg"  alt=""> 
                     </a>
                 </div>
             </div> 
