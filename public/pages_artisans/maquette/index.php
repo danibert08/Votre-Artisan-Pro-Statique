@@ -207,7 +207,7 @@ Afin de vous proposer un **devis précis et au prix juste**, je me déplace dire
                 <h2>Contactez-nous</h2>
                 <div class="form-group">
                     <label for="name">Nom</label>
-                    <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                    <input type="text" id="name" name="nom" placeholder="Votre nom" required>
                 </div>
                 <div class="form-group">
                     <label for="email">Email</label>
@@ -221,7 +221,12 @@ Afin de vous proposer un **devis précis et au prix juste**, je me déplace dire
                     <label for="message">Message</label>
                     <textarea id="message" name="message" placeholder="Votre message" required></textarea>
                 </div>
+                <!-- Honeypot anti-spam -->
+                <input type="text" name="website" id="website" style="display:none">
+
                 <button class="button" type="submit">Envoyer</button>
+
+                <div id="form-response"></div>
             </form>
 
                                 <!--   SOCIAL MEDIA ICONS SECTION -->
