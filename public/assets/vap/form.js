@@ -37,9 +37,9 @@ document.addEventListener("DOMContentLoaded", function () {
         fetch(API_URL, {
             method: "POST",
             body: formData
-            
-            .then(res => res.json())
-            .then(data => {
+        })
+        .then(res => res.json())
+        .then(data => {
 
             responseBox.textContent = data.message;
             responseBox.className = data.status;
