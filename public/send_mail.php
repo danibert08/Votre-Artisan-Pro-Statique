@@ -335,8 +335,18 @@ try {
 
   $mail->send();
   echo json_encode(["status" => "success", "message" => "Message envoyé"]);
-} catch (Exception $e) {
+// } catch (Exception $e) {
+//     http_response_code(500);
+//     echo json_encode(["status" => "error", "message" => "Erreur d'envoi"]);
+// }
+
+}catch (Exception $e) {
     http_response_code(500);
-    echo json_encode(["status" => "error", "message" => "Erreur d'envoi"]);
+    echo json_encode([
+        "status" => "error",
+        "message" => "Erreur SMTP",
+        "debug" => $mail->ErrorInfo
+    ]);
 }
+
 ?> 
