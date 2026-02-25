@@ -301,17 +301,42 @@ $message = htmlspecialchars($message, ENT_QUOTES, 'UTF-8');
    Envoi mail
 ========================= */
 
-$headers  = "From: $email\r\n";
-$headers .= "Reply-To: $email\r\n";
-$headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
+require __DIR__ . '/vendor/autoload.php';
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 
-$body = "Nom : $nom\n";
-$body .= "Email : $email\n\n";
-$body .= "Message :\n$message\n";
+$mail = new PHPMailer(true);
 
-if (mail($artisanEmail, $sujet, $body, $headers)) {
-    echo json_encode(["status" => "success", "message" => "Message envoyé avec succès"]);
-} else {
-    echo json_encode(["status" => "error", "message" => "Erreur lors de l'envoi"]);
+try {
+  $mail->isSMTP();
+  $mail->Host       = getenv('SMTP_HOST');
+  $mail->SMTPAuth   = true;
+  $mail->Username   = getenv('SMTP_USER');
+  $mail->Password   = getenv('SMTP_PASS');
+  $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+  $mail->Port       = (int)(getenv('SMTP_PORT') ?: 465);
+
+  // From = ton domaine (celui du SMTP), Reply-To = client
+  $fromEmail = getenv('SMTP_FROM') ?: getenv('SMTP_USER');
+  $fromName  = getenv('SMTP_FROM_NAME') ?: 'VotreArtisanPro';
+  $mail->setFrom($fromEmail, $fromName);
+  $mail->addReplyTo($email, $nom);
+
+  $mail->addAddress($artisanEmail);
+
+  $mail->Subject = "Demande via {$sd}.votreartisanpro.fr : {$sujet}";
+  $mail->Body =
+    "Nouvelle demande via formulaire\n\n" .
+    "Artisan (sous-domaine): {$sd}\n" .
+    "Nom: {$nom}\n" .
+    "Email client: {$email}\n" .
+    "Sujet: {$sujet}\n\n" .
+    "Message:\n{$message}\n";
+
+  $mail->send();
+  echo json_encode(["status" => "success", "message" => "Message envoyé"]);
+} catch (Exception $e) {
+    http_response_code(500);
+    echo json_encode(["status" => "error", "message" => "Erreur d'envoi"]);
 }
 ?> 
