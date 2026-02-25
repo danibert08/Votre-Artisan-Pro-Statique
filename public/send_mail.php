@@ -113,8 +113,9 @@ if ($sd === '') {
  */
 $artisanMap = [
   'ypria' => 'apr.a3p@gmail.com',
-  'labellepeinture'=> 'apr.a3p@gmail.com',
+  'la-belle-peinture'=> 'apr.a3p@gmail.com',
   'preprod' => 'informacc85@gmail.com',
+  'maquette' => 'berthida34@gmail.com',
 ];
 
 $artisanEmail = $artisanMap[$sd] ?? null;
