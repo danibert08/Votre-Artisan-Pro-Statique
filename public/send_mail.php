@@ -313,7 +313,7 @@ try {
   $mail->SMTPAuth   = true;
   $mail->Username   = getenv('SMTP_USER');
   $mail->Password   = getenv('SMTP_PASS');
-  $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+  $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
   $mail->Port       = (int)(getenv('SMTP_PORT') ?: 587);
 
   // From = ton domaine (celui du SMTP), Reply-To = client
