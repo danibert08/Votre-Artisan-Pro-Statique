@@ -314,7 +314,7 @@ try {
   $mail->Username   = getenv('SMTP_USER');
   $mail->Password   = getenv('SMTP_PASS');
   $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
-  $mail->Port       = (int)(getenv('SMTP_PORT') ?: 465);
+  $mail->Port       = (int)(getenv('SMTP_PORT') ?: 587);
 
   // From = ton domaine (celui du SMTP), Reply-To = client
   $fromEmail = getenv('SMTP_FROM') ?: getenv('SMTP_USER');
