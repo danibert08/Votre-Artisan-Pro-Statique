@@ -191,7 +191,7 @@ Afin de vous proposer un **devis précis et au prix juste**, je me déplace dire
                     </p>  
                 </div>
             </section>
-            <div id="contact" class="en-tete__contact">
+            <div class="en-tete__contact">
                 <div class="button" >
                     <img class="en-tete__contact_icone" src="/pages_artisans/icones/telephone.svg" alt=""> 
                     <a class="en-tete__contact-text" href="tel:+33745063458">             
@@ -260,7 +260,6 @@ Afin de vous proposer un **devis précis et au prix juste**, je me déplace dire
         </footer>
     </div>
     <script src="pages_artisans/maquette/theme.js" module="javascript" ></script>
-        <script src="/assets/vap/form.js"></script>
-
+    <script src="/assets/vap/form.js"></script>
 </body>
 </html>
