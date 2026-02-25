@@ -127,8 +127,7 @@ $message = htmlspecialchars($message, ENT_QUOTES, 'UTF-8');
 ========================= */
 
 $apiKey = getenv('BREVO_API_KEY');
-var_dump(getenv('BREVO_API_KEY'));
-exit;
+
 if (!$apiKey) {
     http_response_code(500);
     exit(json_encode(["status"=>"error","message"=>"Config serveur invalide"]));
