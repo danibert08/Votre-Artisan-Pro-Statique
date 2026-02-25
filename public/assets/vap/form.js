@@ -32,12 +32,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const formData = new FormData(form);
 
-        fetch("/send_mail.php", {
+        const API_URL = "https://votreartisanpro.fr/send_mail.php";
+
+        fetch(API_URL, {
             method: "POST",
             body: formData
-        })
-        .then(res => res.json())
-        .then(data => {
+            
+            .then(res => res.json())
+            .then(data => {
 
             responseBox.textContent = data.message;
             responseBox.className = data.status;
