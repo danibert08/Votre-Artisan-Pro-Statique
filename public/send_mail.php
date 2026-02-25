@@ -58,6 +58,26 @@
 
 
 
+if (isset($_SERVER['HTTP_ORIGIN'])) {
+    $origin = $_SERVER['HTTP_ORIGIN'];
+
+    // Autorise uniquement les sous-domaines de votreartisanpro.fr
+    if (preg_match('#^https://([a-z0-9-]+\.)?votreartisanpro\.fr$#', $origin)) {
+        header("Access-Control-Allow-Origin: $origin");
+    }
+}
+
+header("Access-Control-Allow-Methods: GET, POST, OPTIONS");
+header("Access-Control-Allow-Headers: Content-Type, Authorization");
+header("Vary: Origin");
+
+// Gestion du preflight
+if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
+    http_response_code(204);
+    exit();
+}
+
+
 header('Content-Type: application/json');
 
 if ($_SERVER["REQUEST_METHOD"] !== "POST") {
