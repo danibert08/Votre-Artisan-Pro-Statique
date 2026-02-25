@@ -203,7 +203,7 @@ Afin de vous proposer un **devis précis et au prix juste**, je me déplace dire
                                 <!--    ******FORMULAIRE DE CONTACT *******-->
 
 
-            <form class="form-container">
+            <form id="contact" class="form-container">
                 <h2>Contactez-nous</h2>
                 <div class="form-group">
                     <label for="name">Nom</label>
