@@ -331,6 +331,9 @@ $mail->Password   = getenv('SMTP_PASS');
 $mail->Port       = (int)getenv('SMTP_PORT');
 $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
 
+var_dump(getenv('SMTP_USER'));
+exit;
+
 $mail->setFrom('daniel@votreartisanpro.fr', 'VotreArtisanPro');
 $mail->addReplyTo($email, $nom);  // email du client
 $mail->addAddress($artisanEmail);
