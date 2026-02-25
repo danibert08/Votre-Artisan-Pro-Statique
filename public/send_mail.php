@@ -336,10 +336,10 @@ $mail->addReplyTo($email, $nom);  // email du client
 $mail->addAddress($artisanEmail);
 
 
-  $mail->Subject = "Demande via {$sd}.votreartisanpro.fr : {$sujet}";
+  $mail->Subject = "Nouvelle demande via le formulaire de votre site : {$sd}.votreartisanpro.fr ";
   $mail->Body =
-    "Nouvelle demande via formulaire\n\n" .
-    "Artisan (sous-domaine): {$sd}\n" .
+    
+    "Artisan : {$sd}\n" .
     "Nom: {$nom}\n" .
     "Email client: {$email}\n" .
     "Sujet: {$sujet}\n\n" .
@@ -347,18 +347,18 @@ $mail->addAddress($artisanEmail);
 
   $mail->send();
   echo json_encode(["status" => "success", "message" => "Message envoyé"]);
-} catch (Exception $e) {
-    http_response_code(500);
-    echo json_encode(["status" => "error", "message" => "Erreur d'envoi"]);
-}
-
-// }catch (Exception $e) {
+// } catch (Exception $e) {
 //     http_response_code(500);
-//     echo json_encode([
-//         "status" => "error",
-//         "message" => "Erreur SMTP",
-//         "debug" => $mail->ErrorInfo
-//     ]);
+//     echo json_encode(["status" => "error", "message" => "Erreur d'envoi"]);
 // }
+
+}catch (Exception $e) {
+    http_response_code(500);
+    echo json_encode([
+        "status" => "error",
+        "message" => "Erreur SMTP",
+        "debug" => $mail->ErrorInfo
+    ]);
+}
 
 ?> 
