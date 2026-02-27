@@ -57,13 +57,14 @@ if (empty($_SERVER['HTTP_ORIGIN'])) {
 $origin = $_SERVER['HTTP_ORIGIN'];
 $originHost = parse_url($origin, PHP_URL_HOST);
 
-if (
-    !$originHost ||
-    !preg_match(
-        '#^([a-z0-9-]+)\.' . preg_quote($allowedRoot, '#') . '$#',
-        $originHost
-    )
-) {
+// Autorise domaine racine et tous les sous-domaines
+if ($originHost === $allowedRoot || str_ends_with($originHost, '.' . $allowedRoot)) {
+    header("Access-Control-Allow-Origin: $origin");
+    header("Vary: Origin");
+    header("Access-Control-Allow-Methods: POST, OPTIONS");
+    header("Access-Control-Allow-Headers: Content-Type");
+    header('Content-Type: application/json');
+} else {
     http_response_code(403);
     exit(json_encode([
         "status"=>"error",
@@ -71,12 +72,7 @@ if (
     ]));
 }
 
-header("Access-Control-Allow-Origin: $origin");
-header("Vary: Origin");
-header("Access-Control-Allow-Methods: POST, OPTIONS");
-header("Access-Control-Allow-Headers: Content-Type");
-header('Content-Type: application/json');
-
+// Gestion du preflight OPTIONS
 if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
     http_response_code(204);
     exit;
