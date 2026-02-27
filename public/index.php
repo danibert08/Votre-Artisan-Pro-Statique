@@ -21,7 +21,14 @@ $host = strtolower($_SERVER['HTTP_HOST'] ?? '');
 // Suppression du port éventuel (localhost:8000)
 $host = explode(':', $host)[0];
 
-if ($host === $rootDomain || $host === "www.$rootDomain") {
+$allowedRoots = [
+    $rootDomain,
+    "www.$rootDomain",
+    "preprod.$rootDomain",
+    "test.$rootDomain" // futur container de test
+];
+
+if (in_array($host, $allowedRoots)) {
     require __DIR__ . '/home.php';
     exit;
 }
