@@ -60,9 +60,10 @@ $originHost = parse_url($origin, PHP_URL_HOST);
 // Autorise domaine racine et tous les sous-domaines
 if ($originHost === $allowedRoot || str_ends_with($originHost, '.' . $allowedRoot)) {
     header("Access-Control-Allow-Origin: $origin");
+    header("Access-Control-Allow-Credentials: true");
     header("Vary: Origin");
     header("Access-Control-Allow-Methods: POST, OPTIONS");
-    header("Access-Control-Allow-Headers: Content-Type");
+    header("Access-Control-Allow-Headers: Content-Type, X-CSRF-Token");
     header('Content-Type: application/json');
 } else {
     http_response_code(403);
