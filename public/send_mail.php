@@ -334,17 +334,39 @@ if (!empty($_POST["website"])) {
 //     return substr($host, 0, -1 - strlen($root));
 // }
 
+// function getSubdomainLabel(string $host, string $root): string {
+//     $host = strtolower(trim($host));
+//     $host = preg_replace('/:\d+$/', '', $host); // enlève le port
+
+//     if ($host === $root) return 'root'; // domaine racine
+
+//     if (!str_ends_with($host, '.' . $root)) return 'null';
+
+//     // Extrait juste le premier label du sous-domaine
+//     $labels = explode('.', substr($host, 0, -1 - strlen($root)));
+//     return $labels[0]; // 'ypria' dans ypria.preprod.votreartisanpro.fr
+// }
+
+
 function getSubdomainLabel(string $host, string $root): string {
     $host = strtolower(trim($host));
-    $host = preg_replace('/:\d+$/', '', $host); // enlève le port
+    $host = preg_replace('/:\d+$/', '', $host); 
 
-    if ($host === $root) return 'root'; // domaine racine
-
+    if ($host === $root) return 'root';
     if (!str_ends_with($host, '.' . $root)) return 'null';
 
-    // Extrait juste le premier label du sous-domaine
-    $labels = explode('.', substr($host, 0, -1 - strlen($root)));
-    return $labels[0]; // 'ypria' dans ypria.preprod.votreartisanpro.fr
+    // Extrait la partie avant le domaine racine
+    $subPart = substr($host, 0, -1 - strlen($root));
+    $labels = explode('.', $subPart);
+
+    // LOGIQUE CORRIGÉE :
+    // Si on a "artisans.preprod", $labels[0] est "artisans" et $labels[1] est "preprod"
+    // On veut l'artisan réel, donc on prend le premier, SAUF si c'est le mot générique "artisans"
+    if ($labels[0] === 'artisans' && isset($labels[1])) {
+        return $labels[1]; 
+    }
+
+    return $labels[0]; 
 }
 
 $sd = getSubdomainLabel($originHost, $allowedRoot);
