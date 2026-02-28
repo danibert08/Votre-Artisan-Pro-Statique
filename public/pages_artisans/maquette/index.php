@@ -36,7 +36,7 @@
 
             <div id="accueil" class="en-tete">
                 <div class="en-tete__hero">
-                    <img class="en-tete__hero_hero-img" src="/pages_artisans/maquette/images/photos1/m1.jpeg"  alt="" >
+                    <img class="en-tete__hero_hero-img" src="/pages_artisans/maquette/images/hero/h1.jpeg"  alt="" >
                 </div>
                 <!--<div class="en-tete__logo">
                     <img class="en-tete__logo_logo-img" src="/pages_artisans/maquette/images/logo/logo.jpeg"  alt="">

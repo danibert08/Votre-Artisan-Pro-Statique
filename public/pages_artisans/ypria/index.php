@@ -35,7 +35,7 @@
 
             <div id="accueil" class="en-tete">
                 <div class="en-tete__hero">
-                    <img class="en-tete__hero_hero-img" src="/pages_artisans/ypria/images/photos1/m13hero.jpeg" alt="" >
+                    <img class="en-tete__hero_hero-img" src="/pages_artisans/ypria/images/hero/h1.jpeg" alt="" >
                 </div>
                 <div class="en-tete__logo">
                     <img class="en-tete__logo_logo-img" src="/pages_artisans/ypria/images/logo/logo.jpeg"  alt="">

@@ -31,7 +31,7 @@
 
             <div id="accueil" class="en-tete">
                 <div class="en-tete__hero">
-                    <img class="en-tete__hero_hero-img" src="/pages_artisans/la-belle-peinture/images/photos1/m6.avif" alt="" >
+                    <img class="en-tete__hero_hero-img" src="/pages_artisans/la-belle-peinture/images/hero/h1.jpg" alt="" >
                 </div>
                 <!--<div class="en-tete__logo">
                     <img class="en-tete__logo_logo-img" src="assets/photos/logo/logo.jpeg"  alt="">

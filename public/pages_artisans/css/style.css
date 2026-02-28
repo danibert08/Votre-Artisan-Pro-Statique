@@ -33,9 +33,8 @@ html{
 }
 
 .en-tete__hero_hero-img{
-    width: 100%;
+    width: 100%;  
 }
-
 .en-tete__logo{
     text-align: center;
     margin-top: -1.5rem;
@@ -67,6 +66,7 @@ html{
     font-weight: bold;
     font-size: 2rem;
     margin-bottom: 1.5rem;  
+    color: var(--color-enseigne)
 }
 
 .en-tete__title_commune{
@@ -525,7 +525,7 @@ textarea {
 @media screen and (min-width: 1000px){
     .container{
         background-color: var(--container-bg-color);
-        width: 70vw;
+        width: 60vw;
         margin: auto; 
     }
     .en-tete__logo{
@@ -591,6 +591,7 @@ body.green{
     --button-box-shadow:  #aac855;
     --services-box-shadow: #A3CB38;
     --photo-shadow: #2e2027;
+    --color-enseigne: #617e11;
     --socialmedia-title-color: #009432;
     --navbar-bg-color: #A3CB38;
     --navbar-text-color: white;
@@ -605,6 +606,7 @@ body.orange{
     /* --button-box-shadow:  #F79F1F; */
     --services-box-shadow: #F79F1F;
     --photo-shadow: #2e2027;
+    --color-enseigne: #bd8a3e;
     --socialmedia-title-color: #EE5A24;
     --navbar-bg-color: #F79F1F;
     --navbar-text-color: white;
@@ -619,6 +621,7 @@ body.pink{
     --button-box-shadow:  #cf8ee6;
     --services-box-shadow: #D980FA;
     --photo-shadow: #2e2027;
+    --color-enseigne: #55146d;
     --socialmedia-title-color: #9980FA;
     --navbar-bg-color: #D980FA;
     --navbar-text-color: white;
@@ -633,6 +636,7 @@ body.blue{
     /* --button-box-shadow:  #87b4e1; */
     --services-box-shadow: #1289A7;
     --photo-shadow: #2e2027;
+    --color-enseigne: #10414d;
     --socialmedia-title-color: #1289A7;
     --navbar-bg-color: #1289A7;
     --navbar-text-color: white;
@@ -647,6 +651,7 @@ body.light-blue{
     --button-box-shadow:  #5fb8cf;
     --services-box-shadow: #5fb8cf;
     --photo-shadow: #2e2027;
+    --color-enseigne: #0e4654;
     --socialmedia-title-color: #1d5f70;
     --navbar-bg-color: #5fb8cf;
     --navbar-text-color: white;
@@ -661,6 +666,7 @@ body.purple{
     /* --button-box-shadow:  #ce81a5; */
     --services-box-shadow: #B53471;
     --photo-shadow: #2e2027;
+    --color-enseigne: #7c2e52;
     --socialmedia-title-color: #833471;
     --navbar-bg-color: #B53471;
     --navbar-text-color: white;
@@ -675,6 +681,7 @@ body.brown{
     --button-box-shadow:  #603c06;
     --services-box-shadow: #603c06;
     --photo-shadow: #2e2027;
+    --color-enseigne: #3c2a10;
     --socialmedia-title-color: #3c1d05;
     --navbar-bg-color: #603c06;
     --navbar-text-color: white;
@@ -689,6 +696,7 @@ body.grey{
     --button-box-shadow:  #a4b0be;
     --services-box-shadow: #a4b0be;
     --photo-shadow: #2e2027;
+    --color-enseigne: #3c3e3f;
     --socialmedia-title-color: #57606f;
     --navbar-bg-color: #a4b0be;
     --navbar-text-color: white;
@@ -702,8 +710,9 @@ body.june{
     --button-text-color:black;
     --button-border-color:white;
     --button-box-shadow:  #e99fb1;
-    --services-box-shadow: #e99fb1;
+    --services-box-shadow: #ef9cb1;
     --photo-shadow: #2e2027;
+    --color-enseigne: #f07594;
     --socialmedia-title-color: purple;
     --navbar-bg-color: #e99fb1;
     --navbar-text-color: white;
