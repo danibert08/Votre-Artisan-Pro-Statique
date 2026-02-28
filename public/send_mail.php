@@ -193,17 +193,35 @@ curl_setopt_array($ch, [
     CURLOPT_POSTFIELDS => json_encode($data)
 ]);
 
+/* =========================
+   Envoi via Brevo et Réponse
+========================= */
 $response = curl_exec($ch);
 $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
 curl_close($ch);
 
-if ($response === false || $httpCode !== 201) {
-    error_log("Brevo error HTTP $httpCode: $response");
-    echo json_encode(["status"=>"error","message"=>"Erreur d'envoi"]);
-    exit;
+// --- AJOUT SÉCURITÉ ICI ---
+// On vide tout ce qui a pu être écrit (espaces, warnings) avant
+while (ob_get_level()) {
+    ob_end_clean();
 }
 
-echo json_encode(["status"=>"success"]);
+header('Content-Type: application/json; charset=utf-8');
+// Ré-envoi du header CORS ici pour être certain qu'il part avec le JSON
+header("Access-Control-Allow-Origin: $origin");
+header("Access-Control-Allow-Credentials: true");
+
+if ($response !== false && $httpCode === 201) {
+    echo json_encode(["status" => "success"]);
+} else {
+    http_response_code(500);
+    echo json_encode([
+        "status" => "error", 
+        "message" => "Erreur d'envoi",
+        "debug_code" => $httpCode
+    ]);
+}
+exit; // On arrête tout pour que l'index.php ne rajoute rien derrière
 ?>
 
  
