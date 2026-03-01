@@ -1,5 +1,5 @@
 <?php 
-require('app/public/vendor/autoload.php');
+require('/public/vendor/autoload.php');
 /* =========================
    Environnement et erreurs // on ffiche les erreurs en local, et on les log en prod
 ========================= */
