@@ -12,7 +12,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ypria</title>
+    <link rel="canonical" href="https://ypria.votreartisanpro.fr/" />
+    <title>Ypria : prothésiste ongulaire et maquilleuse</title>
     <link rel="stylesheet" href="/pages_artisans/css/reset.css" class="css">
     <link rel="stylesheet" href="/pages_artisans/css/style.css" class="css">
     <link rel="preconnect" href="https://fonts.googleapis.com">

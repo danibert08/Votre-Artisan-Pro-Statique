@@ -12,7 +12,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Belle Peinture</title>
+    <link rel="canonical" href="https://la-belle-peinture.votreartisanpro.fr/" />
+    <title>La Belle Peinture : travaux de peinture et de vitrerie</title>
     <link rel="stylesheet" href="/pages_artisans/css/reset.css" class="css">
     <link rel="stylesheet" href="/pages_artisans/css/style.css" class="css">
 </head>
