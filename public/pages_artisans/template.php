@@ -12,7 +12,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maquette</title>
+    <meta name="robots" content="noindex"><!-- A retirer pour chaque artisan -->
+    <?php
+        $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? "https" : "http";
+        $host = $_SERVER['HTTP_HOST'];
+        $canonical_url = $protocol . "://" . $host . "/";
+    ?>
+    <link rel="canonical" href="<?= $canonical_url; ?>" />
+    <title><?= "";//"Nom commercial" ?></title>
     <link rel="stylesheet" href="/pages_artisans/css/reset.css" class="css">
     <link rel="stylesheet" href="/pages_artisans/css/style.css" class="css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,7 +43,7 @@
 
             <div id="accueil" class="en-tete">
                 <div class="en-tete__hero">
-                    <img class="en-tete__hero_hero-img" src="/pages_artisans/maquette/images/hero/h1.jpeg"  alt="" >
+                    <img class="en-tete__hero_hero-img" src="<?= "";//chemin image hero ?>"  alt="" >
                 </div>
                 <!--<div class="en-tete__logo">
                     <img class="en-tete__logo_logo-img" src="/pages_artisans/maquette/images/logo/logo.jpeg"  alt="">
