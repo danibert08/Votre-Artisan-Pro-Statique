@@ -3,9 +3,6 @@ require('../vendor/autoload.php');
 /* =========================
    Environnement et erreurs // on ffiche les erreurs en local, et on les log en prod
 ========================= */
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
 
 $appEnv = getenv('APP_ENV') ?: 'prod';
 
