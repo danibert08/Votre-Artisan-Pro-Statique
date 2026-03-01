@@ -160,7 +160,7 @@ else {
     if (str_ends_with($host, '.' . $rootDomain)) {
         $subdomainRaw = substr($host, 0, -strlen('.' . $rootDomain));
         $parts = explode('.', $subdomainRaw);
-        $technicalKeywords = ['preprod', 'proprios', 'maquette', 'www'];
+        $technicalKeywords = ['preprod', 'proprios', 'www'];
 
         foreach ($parts as $partsLabel) {
             if (!in_array($partsLabel, $technicalKeywords)) {
