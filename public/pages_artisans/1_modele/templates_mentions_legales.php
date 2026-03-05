@@ -20,7 +20,7 @@
     }
 
     ?>
-    <title><?= $data['nom_commercial'] . ' - Mentions Légales'; ?></title>
+    <title><?=  $data['nom_commercial'] . ' - Mentions Légales' ; ?></title>
 </head>
 <body id="body" class="<?= $data['theme_couleur'] ?>">  
     <main class="mentions">
@@ -79,7 +79,7 @@
     </main>
     <div class="en-tete__contact">
         <div class="button" >
-            <img class="en-tete__contact_icone" src="/assets/common_assets/icones/telephone.svg" alt=""> 
+            <img class="en-tete__contact_icone" src="assets/common_assets/icones/telephone.svg" alt=""> 
             <a class="en-tete__contact-text" href="index.php">             
                 Retour
             </a>

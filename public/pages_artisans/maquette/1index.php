@@ -11,15 +11,16 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex"><!-- A retirer pour chaque artisan -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="[Maquette] vous présente son activité de [votre activité]" />
     <?php
         $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? "https" : "http";
         $host = $_SERVER['HTTP_HOST'];
         $canonical_url = $protocol . "://" . $host . "/";
     ?>
     <link rel="canonical" href="<?= $canonical_url; ?>" />
-    <title><?= "";//"Nom commercial" ?></title>
+    <title>Maquette : votre ....</title>
     <link rel="stylesheet" href="/pages_artisans/css/reset.css" class="css">
     <link rel="stylesheet" href="/pages_artisans/css/style.css" class="css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -43,7 +44,7 @@
 
             <div id="accueil" class="en-tete">
                 <div class="en-tete__hero">
-                    <img class="en-tete__hero_hero-img" src="<?= "";//chemin image hero ?>"  alt="" >
+                    <img class="en-tete__hero_hero-img" src="/pages_artisans/maquette/images/hero/h1.jpeg"  alt="" >
                 </div>
                 <!--<div class="en-tete__logo">
                     <img class="en-tete__logo_logo-img" src="/pages_artisans/maquette/images/logo/logo.jpeg"  alt="">
@@ -167,7 +168,14 @@
                     </p>                  
                 </div>       
             </section>   
-
+            <div class="en-tete__contact">
+                <div id="services2" class="button" >
+                    <img class="en-tete__contact_icone" src="/pages_artisans/icones/telephone.svg" alt=""> 
+                    <a class="en-tete__contact-text" href="tel:+33745063458">             
+                        07 45 06 34 58 
+                    </a>
+                </div>
+            </div>
                          <!--   Google map. -->
 
             <div class="map">
@@ -250,13 +258,13 @@ Afin de vous proposer un **devis précis et au prix juste**, je me déplace dire
             <div class="socialmedia">
                 <p class="socialmedia-title">Pour me suivre :</p>
                 <div class="socialmedia-icons">
-                    <a class="socialmedia-link insta"  href="https://www.instagram.com/ypria_beauty?igsh=MWw1ZDdpdHQ1NjJnOQ==">             
+                    <a class="socialmedia-link insta"  href="#">             
                         <img class="socialmedia-img" src="/pages_artisans/icones/icons8-instagram-48.svg"  alt=""> 
                     </a>
-                    <a class="socialmedia-link tictac"  href="https://www.tiktok.com/@ypria_?_r=1&_t=ZN-93t81PboCjD">             
+                    <a class="socialmedia-link tictac"  href="#">             
                         <img class="socialmedia-img" src="/pages_artisans/icones/icons8-tic-tac-50.svg" alt=""> 
                     </a>
-                    <a class="socialmedia-link fbook"  href="https://www.facebook.com/share/14VhSsPpgAV/?mibextid=wwXIfr">             
+                    <a class="socialmedia-link fbook"  href="#">             
                         <img class="socialmedia-img" src="/pages_artisans/icones/icons8-facebook-48.svg"  alt=""> 
                     </a>
                 </div>

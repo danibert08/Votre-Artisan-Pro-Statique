@@ -1,0 +1,52 @@
+{
+  "nom": "MaquetteNom",
+  "prenom" : "MaquettePrenom",
+  "nom_commercial" : "Ma Maquette",
+  "metier": "SaaS",
+  "commune": "lmes Sables d'Olonne",
+  "telephone" : "0658012358",
+  "mail" : "daniel@votreartisanpro.fr",
+  "forme_juridique": "EI",
+  "siren": "286071248",
+  "rue": "6 Rue du Val d'Olonne", 
+  "ville": "85180 Les Sables d'Olonne",
+  "google_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13387.013738427035!2d-1.7634246866354726!3d46.491892755777585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480468163f562537%3A0xd1c5b68e6ce5408f!2s159%20Av.%20du%20Pass.%20du%20Bois%2C%2085180%20Les%20Sables-d&#39;Olonne!5e0!3m2!1sfr!2sfr!4v1772572948590!5m2!1sfr!2sfr",
+  "theme_couleur": "green",
+  "tag_title": "Maquette : vottre site ....",
+  "image_hero": "h1.jpeg",
+  "image_logo": "",
+  "tiktok": "https://www.tiktok.com/@danibert088?_r=1&_t=ZN-93t7aRZrupq",
+  "instagram": "https://www.instagram.com/ypria_beauty?igsh=MWw1ZDdpdHQ1NjJnOQ==",
+  "facebook": "https://www.facebook.com/share/14VhSsPpgAV/?mibextid=wwXIfr",
+  
+
+  "services": "Mes services",
+  "sections": [
+    {
+      "id": "1",
+      "service":"Services1",
+      "activite": "Notre activité",
+      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet consequatur, natus, asperiores vitae ipsam provident quo ab minus officia, ipsum quia sequi repellat adipisci modi ipsa eius ducimus? Cumue et ipsa unde, doloremue hic voluptates nesciunt aliquam fugit impedit nemo minus possimus assumenda praesentium earum autem, architecto similique",
+      "dossier_photos": "photos1"
+    },
+    {
+      "id": "2",
+      "service":"Services2",
+      "activite": "Notre activité",
+      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet consequatur, natus, asperiores vitae ipsam provident quo ab minus officia, ipsum quia sequi repellat adipisci modi ipsa eius ducimus? Cumue et ipsa unde, doloremue hic voluptates nesciunt aliquam fugit impedit nemo minus possimus assumenda praesentium earum autem, architecto similique",
+      "dossier_photos": "photos1"
+    }
+    
+  
+  ],
+
+  "price":{
+    "price_first_title": "Paiement",
+    "price_second_title": "Tarif",
+    "price_text": "Afin de vous proposer un devis précis et au prix juste, je me déplace directement sur place     pour évaluer votre projet. Cette visite me permet d’analyser les surfaces, l’état des supports et les éventuelles contraintes techniques, afin d'établir une estimation détaillée et sans surprise.<br><br>Chaque chantier étant unique, ce rendez-vous est essentiel pour vous garantir un tarif maîtrisé, adapté à vos besoins et à votre budget. Mon engagement : transparence, conseils personnalisés et respect du prix annoncé."
+  },
+  "whoami":{
+    "whoami_first_title":"Qui suis-je",
+    "whoami_text":"Je sui votre meillleur artisan"
+  }
+}

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/pages_artisans/css/reset.css" class="css">
     <link rel="stylesheet" href="/pages_artisans/css/style.css" class="css">
-    <title><!-- nom commercia --> " - Mentions Légales</title>
+    <title>Ypria - Mentions Légales</title>
 </head>
 <body class="june">  
     <main class="mentions">
@@ -13,19 +13,19 @@
         <div>
             <h2>Éditeur du site :</h2><br>    
             <p>Le présent site est édité par :</p><br>
-            <p>Nom / Raison sociale : <!-- nom commercial --></p>
-            <p>Forme juridique : Micro-entreprise <!--changer si nécessaire --></p>
-            <p>SIREN: 378071286</p>// mettre siren
-            <p>Numéro RCS / RM : Les Sables d'Olonne</p>
+            <p>Nom / Raison sociale : YPRIA_BEAUTY<p>
+            <p>Forme juridique : Micro-entreprise</p>
+            <p>SIRET : 378071286</p>
+            <p>Numéro RCS / RM : Les Sables d'olonne</p>
             <p>Numéro TVA intracommunautaire : non concerné</p><br>
             <p>Adresse du siège social : </p><br>
             <address>
-                6 Rue du val d'Olonne <br> <!-- adresse artisan -->
+                6 Rue du val d'Olonne <br>
                 85180 Les Sables d'Olonne <br>
                 Téléphone : 0658012358 <br><br>
-                Email : contact@ypriabeauty.fr <!--mail artisan -->
+                Email : contact@ypriabeauty.fr 
             </address><br>
-            <p>La directrice de la publication est : <!--Nom de l'artisan --></p><br>
+            <p>La directrice de la publication est : Junia JEUNE</p><br>
         </div>
         <div>
             <h2>Hébergement :</h2><br>
@@ -46,8 +46,8 @@
             <p>Site : https://www.votreartisanpro.fr <br>
                 (https://www.hostinger.fr)</p><br>
             <h2>Activité :</h2><br>
-            <p>Le présent site a pour objet de présenter les services de : <!-- Nom commercial--></p>
-            <p>Description de l’activité : <!-- Activités artisan--></p><br>
+            <p>Le présent site a pour objet de présenter les services de : YPRIA_BEAUTY</p>
+            <p>Description de l’activité : pose de prothèse ongulaire et maquillage</p><br>
             <h2>Propriété intellectuelle :</h2><br>
             <p>L’ensemble des éléments présents sur ce site (textes, images, logos, structure, design) sont protégés par le Code de la propriété intellectuelle.
             Toute reproduction, représentation, modification ou adaptation, totale ou partielle, sans autorisation préalable écrite est interdite.</p><br>
@@ -55,9 +55,9 @@
             <p>L’éditeur s’efforce de fournir des informations exactes et à jour.
             Toutefois, il ne saurait être tenu responsable des omissions, inexactitudes ou défauts de mise à jour.</p><br>
             <h2>Données personnelles :</h2><br>
-            <p>Les informations collectées via les formulaires sont destinées uniquement à <!--nom commercial --> afin de répondre aux demandes des utilisateurs. <br>
+            <p>Les informations collectées via les formulaires sont destinées uniquement à YPRIA_BEAUTY afin de répondre aux demandes des utilisateurs. <br>
             Conformément au Règlement Général sur la Protection des Données (RGPD), vous pouvez exercer vos droits d’accès, de rectification ou de suppression en contactant :
-            Email : <!--email artisan --></p><br>
+            Email : contact@ypriabeauty.fr</p><br>
             <h2>Droit applicable :</h2><br>
             <p>Le présent site est soumis au droit français. Tout litige relève de la compétence des tribunaux français.</p> 
         </div>

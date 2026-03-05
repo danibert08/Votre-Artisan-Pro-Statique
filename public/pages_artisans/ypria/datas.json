@@ -1,0 +1,52 @@
+{
+  "dossier": "ypria",
+  "nom": "JEUNE",
+  "prenom" : "Junia",
+  "nom_commercial" : "YPRIA_BEAUTY",
+  "metier": "Prothésiste ongulaire et maquilleuse",
+  "commune": "Les Sables d'Olonne",
+  "telephone" : "0658012358",
+  "mail" : "juniajeune8@gmail.com",
+  "forme_juridique": "Micro Entreprise",
+  "siren": "378071286",
+  "rue":"6 Rue du val d'Olonne",
+  "ville": "85180 Les Sables d'Olonne",
+  "google_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10987.751232509061!2d-1.757700526715638!3d46.48954388774516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480468166bcf9e3b%3A0xda767cbc49818029!2sR%C3%A9sidence%20Les%20Jardins%20du%20Tanchet%2C%206%20Rue%20du%20Val%20d&#39;Olonne%2C%2085180%20Les%20Sables-d&#39;Olonne!5e0!3m2!1sfr!2sfr!4v1772741943920!5m2!1sfr!2sfr",
+  "theme_couleur": "june",
+  "tag_title": "YPRIA_BEAUTY : votre prothésiste ongulaire - Travail soigné",
+  "image_hero": "ypria/images/hero/h1.jpeg",
+  "image_logo": "ypria/images/logo/logo.jpeg",
+  "tiktok": "https://www.tiktok.com/@ypria_?_r=1&_t=ZN-93t81PboCjD",
+  "instagram": "https://www.instagram.com/ypria_beauty?igsh=MWw1ZDdpdHQ1NjJnOQ==",
+  "facebook": "https://www.facebook.com/share/14VhSsPpgAV/?mibextid=wwXIfr",
+  
+  "services": "Mes services",
+  "sections": [
+    {
+      "id":"1",
+      "activite": "Ongles",
+      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet consequatur, natus, asperiores vitae ipsam provident quo ab minus officia, ipsum quia sequi repellat adipisci modi ipsa eius ducimus? Cumque et ipsa unde, doloremque hic voluptates nesciunt aliquam fugit impedit nemo minus possimus assumenda praesentium earum autem, architecto similique ",
+      "dossier_photos": "photos1"
+    },
+    {
+      "id": "2",
+      "activite": "Maquillage",
+      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet consequatur, natus, asperiores vitae ipsam provident quo ab minus officia, ipsum quia sequi repellat adipisci modi ipsa eius ducimus? Cumque et ipsa unde, doloremque hic voluptates nesciunt aliquam fugit impedit nemo minus possimus assumenda praesentium earum autem, architecto similique ",
+      "dossier_photos": "photos2"     
+    }
+   
+  ],
+
+  "price":{
+    "price_first_title": "Paiement",
+    "price_second_title": "Tarif",
+    "price_text": "Je me déplace à domicile et vous propose le prix le plus juste en fonction de votre choix de finition et décoration."
+  },
+  "whoami":{
+    "whoami_first_title":"Qui suis-je",
+    "whoami_text":"J'ai 5 ans d'expérience et je me forme régulièrement pour rester à jour des dernières innovations. Je prends mon temps et travaille consciencieusement pour un résultat parfait."
+  }
+
+  
+
+}

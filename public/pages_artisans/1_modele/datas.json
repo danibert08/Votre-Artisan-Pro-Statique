@@ -1,0 +1,57 @@
+{
+  "dossier": "",
+  "nom": "",
+  "prenom" : "",
+  "nom_commercial" : "",
+  "metier": "",
+  "commune": "",
+  "telephone" : "",
+  "mail" : "",
+  "forme_juridique": "",
+  "siren": "",
+  "rue": "",
+  "ville": "",
+  "google_map": "",
+  "theme_couleur": "",
+  "tag_title": "",
+  "image_hero": "dossier/images/hero/h1.jpeg",
+  "image_logo": "dossier/images/logo/logo.jpeg",
+  "tiktok": "",
+  "instagram": "",
+  "facebook": "",
+  
+  "services": "Services",
+  "sections": [
+    {
+      "id":"1",
+      "activite": "",
+      "text": "",
+      "dossier_photos": "photos1"
+    },
+    {
+      "id": "2",
+      "activite": "",
+      "text": "",
+      "dossier_photos": "photos2"     
+    },
+    {
+      "id": "3",
+      "activite": "",
+      "text": "",
+      "dossier_photos": "photos3"
+    }
+  ],
+
+  "price":{
+    "price_first_title": "Paiement",
+    "price_second_title": "Tarif",
+    "price_text": "Afin de vous proposer un devis précis et au prix juste, je me déplace directement sur place     pour évaluer votre projet. Cette visite me permet d’analyser les surfaces, l’état des supports et les éventuelles contraintes techniques, afin d'établir une estimation détaillée et sans surprise.<br><br>Chaque chantier étant unique, ce rendez-vous est essentiel pour vous garantir un tarif maîtrisé, adapté à vos besoins et à votre budget. Mon engagement : transparence, conseils personnalisés et respect du prix annoncé."
+  },
+  "whoami":{
+    "whoami_first_title":"Qui suis-je",
+    "whoami_text":""
+  }
+
+  
+
+}

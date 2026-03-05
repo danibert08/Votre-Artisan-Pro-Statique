@@ -3,29 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/pages_artisans/css/reset.css" class="css">
-    <link rel="stylesheet" href="/pages_artisans/css/style.css" class="css">
-    <title>Ypria - Mentions Légales</title>
+    <link rel="stylesheet" href="/assets/common_assets/css/reset.css" class="css">
+    <link rel="stylesheet" href="/assets/assets_artisans/css/style.css" class="css">
+    <?php
+        $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? "https" : "http";
+        $host = $_SERVER['HTTP_HOST'];
+        $canonical_url = $protocol . "://" . $host . "/";
+    ?>
+    <?php
+        $json_path = 'datas.json';
+        $data = [];
+
+    if (file_exists($json_path)) {
+        $json_content = file_get_contents($json_path);
+        $data = json_decode($json_content, true);
+    }
+
+    ?>
+    <title><?= $data['nom'] . '-' . $data['nom_commercial']; ?></title>
 </head>
-<body id="body">  
+<body id="body" class="<?= $data['theme_couleur'] ?>">  
     <main class="mentions">
         <h1>Mentions légales</h1><br>
         <div>
             <h2>Éditeur du site :</h2><br>    
             <p>Le présent site est édité par :</p><br>
-            <p>Nom / Raison sociale : YPRIA_BEAUTY<p>
-            <p>Forme juridique : Micro-entreprise</p>
-            <p>SIRET : 378071286</p>
-            <p>Numéro RCS / RM : Les Sables d'olonne</p>
+            <p>Nom / Raison sociale : <?= $data['nom_commercial'] ?><p>
+            <p>Forme juridique : <?= $data['forme_juridique'] ?></p>
+            <p>SIRET : <?= $data['siren'] ?></p>
+            
             <p>Numéro TVA intracommunautaire : non concerné</p><br>
             <p>Adresse du siège social : </p><br>
             <address>
-                6 Rue du val d'Olonne <br>
-                85180 Les Sables d'Olonne <br>
-                Téléphone : 0658012358 <br><br>
-                Email : contact@ypriabeauty.fr 
+                <?= $data['rue'] ?><br>
+                <?= $data['ville'] ?><br><br>
+                Téléphone : <?= $data['telephone'] ?> <br><br>
+                Email : <?= $data['mail'] ?> 
             </address><br>
-            <p>La directrice de la publication est : Junia JEUNE</p><br>
+            <p>La directrice de la publication est : <?= $data['prenom'] . ' '  . $data['nom'] .'.' ?></p><br>
         </div>
         <div>
             <h2>Hébergement :</h2><br>
@@ -46,7 +61,7 @@
             <p>Site : https://www.votreartisanpro.fr <br>
                 (https://www.hostinger.fr)</p><br>
             <h2>Activité :</h2><br>
-            <p>Le présent site a pour objet de présenter les services de : YPRIA_BEAUTY</p>
+            <p>Le présent site a pour objet de présenter les services de : <?=  $data['nom_commercial'] ?></p>
             <p>Description de l’activité : pose de prothèse ongulaire et maquillage</p><br>
             <h2>Propriété intellectuelle :</h2><br>
             <p>L’ensemble des éléments présents sur ce site (textes, images, logos, structure, design) sont protégés par le Code de la propriété intellectuelle.
@@ -55,16 +70,16 @@
             <p>L’éditeur s’efforce de fournir des informations exactes et à jour.
             Toutefois, il ne saurait être tenu responsable des omissions, inexactitudes ou défauts de mise à jour.</p><br>
             <h2>Données personnelles :</h2><br>
-            <p>Les informations collectées via les formulaires sont destinées uniquement à YPRIA_BEAUTY afin de répondre aux demandes des utilisateurs. <br>
+            <p>Les informations collectées via les formulaires sont destinées uniquement à <?= $data['nom_commercial'] ?> afin de répondre aux demandes des utilisateurs. <br>
             Conformément au Règlement Général sur la Protection des Données (RGPD), vous pouvez exercer vos droits d’accès, de rectification ou de suppression en contactant :
-            Email : contact@ypriabeauty.fr</p><br>
+            Email : <?= $data['mail'] ?></p><br>
             <h2>Droit applicable :</h2><br>
             <p>Le présent site est soumis au droit français. Tout litige relève de la compétence des tribunaux français.</p> 
         </div>
     </main>
     <div class="en-tete__contact">
         <div class="button" >
-            <img class="en-tete__contact_icone" src="/pages_artisans/icones/telephone.svg" alt=""> 
+            <img class="en-tete__contact_icone" src="/common_assets/icones/telephone.svg" alt=""> 
             <a class="en-tete__contact-text" href="/pages_artisans/maquette/index.php">             
                 Retour
             </a>
