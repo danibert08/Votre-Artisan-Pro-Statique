@@ -31,7 +31,7 @@
             $dir = dirname($_SERVER['PHP_SELF']) . '/';
 
             // On crée l'URL de base absolue
-            $baseUrl =  $dir . $data['dossier'] .'/';
+            $baseUrl =  $dir . 'pages-artisans/' . $data['dossier'] .'/';
 
     ?>
     <link rel="canonical" href="<?= $canonical_url; ?>" />
