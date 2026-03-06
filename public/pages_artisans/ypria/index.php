@@ -118,24 +118,24 @@
                                 <!--     Main1 Pictures     -->
 
                     <p class="services__lambda_photos">
-                        <img class="photo photo1" src="/pages_artisans/ypria/images/<?= $section['dossier_photos'] ?>/m1.jpeg" width="100" alt="">                    
-                        <img class="photo photo2" src="/pages_artisans/ypria/<?= $section['dossier_photos'] ?>/m2.jpeg"  width="100" alt="">
+                        <img class="photo photo1" src="/pages_artisans/<?=  $data['dossier'] ?>/images/<?= $section['dossier_photos'] ?>/m1.jpeg" width="100" alt="">                    
+                        <img class="photo photo2" src="/pages_artisans/<?=  $data['dossier'] ?>/images/<?= $section['dossier_photos'] ?>/m2.jpeg"  width="100" alt="">
                     </p>
                     <p class="services__lambda_photos">
-                        <img class="photo photo4" src="/pages_artisans/ypria/images/<?= $section['dossier_photos'] ?>/m4.jpeg" width="100" alt="">
-                        <img class="photo photo3" src="/pages_artisans/ypria/images/<?= $section['dossier_photos'] ?>/m3.jpeg"  width="100" alt="">                  
+                        <img class="photo photo4" src="/pages_artisans/<?=  $data['dossier'] ?>/images/<?= $section['dossier_photos'] ?>/m4.jpeg" width="100" alt="">
+                        <img class="photo photo3" src="/pages_artisans/<?=  $data['dossier'] ?>/images/<?= $section['dossier_photos'] ?>/m3.jpeg"  width="100" alt="">                  
                     </p>
                     <p class="services__lambda_photos">
-                        <img class="photo photo5" src="/pages_artisans/ypria/images/<?= $section['dossier_photos'] ?>/m5.jpeg" width="100" alt="">                    
-                        <img class="photo photo6" src="/pages_artisans/ypria/images/<?= $section['dossier_photos'] ?>/m6.jpeg" width="100" alt="">
+                        <img class="photo photo5" src="/pages_artisans/<?=  $data['dossier'] ?>/images/<?= $section['dossier_photos'] ?>/m5.jpeg" width="100" alt="">                    
+                        <img class="photo photo6" src="/pages_artisans/<?=  $data['dossier'] ?>/images/<?= $section['dossier_photos'] ?>/m6.jpeg" width="100" alt="">
                     </p>
                     <p class="services__lambda_photos">
-                        <img class="photo photo7" src="/pages_artisans/ypria/images/<?= $section['dossier_photos'] ?>/m7.jpeg"  width="100" alt="">                  
-                        <img class="photo photo8" src="images/<?= $section['dossier_photos'] ?>/m8.jpeg"  width="100" alt="">
+                        <img class="photo photo7" src="/pages_artisans/<?=  $data['dossier'] ?>/images/<?= $section['dossier_photos'] ?>/m7.jpeg"  width="100" alt="">                  
+                        <img class="photo photo8" src="/pages_artisans/<?=  $data['dossier'] ?>/images/<?= $section['dossier_photos'] ?>/m8.jpeg"  width="100" alt="">
                     </p>
                     <p class="services__lambda_photos">
-                        <img class="photo photo9" src="/pages_artisans/ypria/images/<?= $section['dossier_photos'] ?>/m9.jpeg"  width="100" alt="">                   
-                        <img class="photo photo10" src="/pages_artisans/ypria/images/<?= $section['dossier_photos'] ?>/m10.jpeg" width="100" alt="">
+                        <img class="photo photo9" src="/pages_artisans/<?=  $data['dossier'] ?>/images/<?= $section['dossier_photos'] ?>/m9.jpeg"  width="100" alt="">                   
+                        <img class="photo photo10" src="/pages_artisans/<?=  $data['dossier'] ?>/images/<?= $section['dossier_photos'] ?>/m10.jpeg" width="100" alt="">
                     </p>
                 </div>
                 <div class="en-tete__contact">
