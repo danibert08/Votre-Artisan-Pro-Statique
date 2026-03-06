@@ -19,11 +19,11 @@
     // 1. URL Canonique (racine du domaine en HTTPS)
     $canonical_url = "https://" . $host . "/";
 
-    // 2. Chemin vers le dossier actuel de l'artisan
-    $currentDir = rtrim(dirname($_SERVER['SCRIPT_NAME']), '/\\');
-    
-    // 3. URL de base pour toutes les ressources relatives (images, etc.)
-    $baseUrl = "https://" . $host . $currentDir . "/";
+    // 2. On récupère le chemin vers le dossier actuel (ex: /pages_artisans/ypria/)
+    $currentPath = rtrim(dirname($_SERVER['SCRIPT_NAME']), '/\\') . '/';
+
+    // 3. On utilise un chemin relatif à la racine du domaine pour éviter les problèmes HTTPS
+    $baseUrl = $currentPath;
 ?>
 
 <!DOCTYPE html>
@@ -65,11 +65,11 @@
 
             <div id="accueil" class="en-tete">
                 <div class="en-tete__hero">
-                    <img class="en-tete__hero_hero-img" src="<?= $data['image_hero'];?>"  alt="" >
+                    <img class="en-tete__hero_hero-img" src="<?=$baseUrl . $data['image_hero'];?>"  alt="" >
                 </div>
                 <?php  if(!empty($data['image_logo'])) 
          echo  '<div class="en-tete__logo">
-                    <img class="en-tete__logo_logo-img" src="'. $data['image_logo'] . '"  alt="">
+                    <img class="en-tete__logo_logo-img" src="'. $baseUrl . $data['image_logo'] . '"  alt="">
                 </div>' ?>
             </div>
 
@@ -115,8 +115,8 @@
                                 <!--     Main1 Pictures     -->
 
                     <p class="services__lambda_photos">
-                        <img class="photo photo1" src="images/<?= $section['dossier_photos'] ?>/m1.jpeg" width="100" alt="">                    
-                        <img class="photo photo2" src="images/<?= $section['dossier_photos'] ?>/m2.jpeg"  width="100" alt="">
+                        <img class="photo photo1" src="<?= $baseUrl ?>images/<?= $section['dossier_photos'] ?>/m1.jpeg" width="100" alt="">                    
+                        <img class="photo photo2" src="<?= $baseUrl ?>images/<?= $section['dossier_photos'] ?>/m2.jpeg"  width="100" alt="">
                     </p>
                     <p class="services__lambda_photos">
                         <img class="photo photo4" src="images/<?= $section['dossier_photos'] ?>/m4.jpeg" width="100" alt="">
