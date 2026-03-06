@@ -250,7 +250,7 @@
             </nav>
         </main>
         <footer class="footer-nav">
-            <a class="mentions-link" href="<?= __DIR__ ?>/mentions_legales.php"><?=  __DIR__ ?>Mentions légales</a>
+            <a class="mentions-link" href="<?= __DIR__ ?>/mentions_legales.php"><?=  __DIR__ ?>/mentions_legales.php</a>
         </footer>
     </div>
     <script src="/assets/vap/form.js"></script>
