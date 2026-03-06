@@ -2,22 +2,29 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <base href="<?php echo $baseUrl; ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/common_assets/css/reset.css" class="css">
     <link rel="stylesheet" href="/assets/assets_artisans/css/style.css" class="css">
     <?php
-        $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? "https" : "http";
-        $host = $_SERVER['HTTP_HOST'];
-        $canonical_url = $protocol . "://" . $host . "/";
-    ?>
-    <?php
-        $json_path = 'datas.json';
+        $json_path = __DIR__ . '/datas.json';
         $data = [];
 
     if (file_exists($json_path)) {
         $json_content = file_get_contents($json_path);
         $data = json_decode($json_content, true);
+    }else {
+    // Petit message de debug pour la prod
+    die("Erreur : Le fichier est introuvable à l'adresse : " . $json_path);
     }
+        $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? "https" : "http";
+            $host = $_SERVER['HTTP_HOST'];
+            $canonical_url = $protocol . "://" . $host . "/";
+            // dirname($_SERVER['SCRIPT_NAME']) récupère le chemin web vers ton dossier actuel
+            // Ex: /pages_artisans/artisan-dupont
+            $currentDir = rtrim(dirname($_SERVER['SCRIPT_NAME']), '/\\');
+
+            $baseUrl = $protocol . $host . $currentDir . '/';
 
     ?>
     <title><?= $data['nom_commercial'] . ' - Mentions Légales'; ?></title>

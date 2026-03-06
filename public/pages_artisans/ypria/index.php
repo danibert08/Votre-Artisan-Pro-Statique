@@ -10,6 +10,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <base href="<?php echo $baseUrl; ?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex"><!-- A retirer pour chaque artisan -->
@@ -27,11 +28,11 @@
         $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? "https" : "http";
             $host = $_SERVER['HTTP_HOST'];
             $canonical_url = $protocol . "://" . $host . "/";
-            // On récupère le chemin vers le dossier actuel (ex: /pages_artisans/artisan-dupont/)
-            $dir = dirname($_SERVER['PHP_SELF']) . '/';
+            // dirname($_SERVER['SCRIPT_NAME']) récupère le chemin web vers ton dossier actuel
+            // Ex: /pages_artisans/artisan-dupont
+            $currentDir = rtrim(dirname($_SERVER['SCRIPT_NAME']), '/\\');
 
-            // On crée l'URL de base absolue
-            $baseUrl =  $dir . 'pages_artisans/' . $data['dossier'] .'/';
+            $baseUrl = $protocol . $host . $currentDir . '/';
 
     ?>
     <link rel="canonical" href="<?= $canonical_url; ?>" />
@@ -114,8 +115,8 @@
                                 <!--     Main1 Pictures     -->
 
                     <p class="services__lambda_photos">
-                        <img class="photo photo1" src="<?= $baseUrl ?>images/<?= $section['dossier_photos'] ?>/m1.jpeg" width="100" alt="">                    
-                        <img class="photo photo2" src="<?= $data['dossier'] ?>images/<?= $section['dossier_photos'] ?>/m2.jpeg"  width="100" alt="">
+                        <img class="photo photo1" src="images/<?= $section['dossier_photos'] ?>/m1.jpeg" width="100" alt="">                    
+                        <img class="photo photo2" src="images/<?= $section['dossier_photos'] ?>/m2.jpeg"  width="100" alt="">
                     </p>
                     <p class="services__lambda_photos">
                         <img class="photo photo4" src="images/<?= $section['dossier_photos'] ?>/m4.jpeg" width="100" alt="">
