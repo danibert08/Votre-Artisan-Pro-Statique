@@ -244,7 +244,7 @@
                 <ul class="nav-links">
                     <li><a href="#accueil">Accueil</a></li>
                     <?php   foreach ($data['sections'] as $section):
-                                echo '<li><a href="#services' . $section['id'] .'">' . $section['service'] .'</a></li>';
+                                echo '<li><a href="#services' . $section['id'] .'">' . $section['activite'] .'</a></li>';
                             endforeach;  
                             if (count($data['sections']) === 1)                      
                             {                          

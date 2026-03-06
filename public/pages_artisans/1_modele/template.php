@@ -4,34 +4,43 @@
     if (empty($_SESSION['csrf_token'])) {
         $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
     } 
+    $json_path = __DIR__ . '/datas.json';
+        $data = [];
+
+    if (file_exists($json_path)) {
+        $json_content = file_get_contents($json_path);
+        $data = json_decode($json_content, true);
+    }else {
+    // Petit message de debug pour la prod
+    die("Erreur : Le fichier est introuvable à l'adresse : " . $json_path);
+    }
+        $host = $_SERVER['HTTP_HOST'];
+    
+    // 1. URL Canonique (racine du domaine en HTTPS)
+    $canonical_url = "https://" . $host . "/";
+
+    // 2. On récupère le chemin vers le dossier actuel (ex: /pages_artisans/ypria/)
+    $currentPath = rtrim(dirname($_SERVER['SCRIPT_NAME']), '/\\') . '/';
+
+    // 3. On récupère le chemin mais on retire "public" s'il est présent dans l'URL
+    $baseUrl = str_replace('/public/', '/', dirname($_SERVER['SCRIPT_NAME']));
+    $baseUrl = rtrim($baseUrl, '/') . '/'; 
+
 ?>
 
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <base href="<?php echo $baseUrl; ?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex"><!-- A retirer pour chaque artisan -->
-    <?php
-        $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? "https" : "http";
-        $host = $_SERVER['HTTP_HOST'];
-        $canonical_url = $protocol . "://" . $host . "/";
-    ?>
-    <?php
-        $json_path = 'datas.json';
-        $data = [];
-
-    if (file_exists($json_path)) {
-        $json_content = file_get_contents($json_path);
-        $data = json_decode($json_content, true);
-    }
-
-    ?>
+    
     <link rel="canonical" href="<?= $canonical_url; ?>" />
     <title><?= $data['tag_title']; ?></title>
-    <link rel="stylesheet" href="/assets/common_assets/css/reset.css" class="css">
-    <link rel="stylesheet" href="/assets/assets_artisans/css/style.css" class="css">
+    <link rel="stylesheet" href="../../assets/common_assets/css/reset.css" class="css">
+    <link rel="stylesheet" href="../../assets/assets_artisans/css/style.css" class="css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
@@ -58,11 +67,11 @@
 
             <div id="accueil" class="en-tete">
                 <div class="en-tete__hero">
-                    <img class="en-tete__hero_hero-img" src="/pages_artisans/<?= $data['image_hero'];?>"  alt="" >
+                    <img class="en-tete__hero_hero-img" src="/pages_artisans/<?= $data['dossier'] ?>/<?= $data['image_hero'];?>"  alt="" >
                 </div>
                 <?php  if(!empty($data['image_logo'])) 
          echo  '<div class="en-tete__logo">
-                    <img class="en-tete__logo_logo-img" src="/pages_artisans/' . $data['image_logo'] . '"  alt="">
+                    <img class="en-tete__logo_logo-img" src="/pages_artisans/'. $data['dossier'] . '/' . $data['image_logo'] . '"  alt="">
                 </div>' ?>
             </div>
 
@@ -108,24 +117,24 @@
                                 <!--     Main1 Pictures     -->
 
                     <p class="services__lambda_photos">
-                        <img class="photo photo1" src="images/<?= $section['dossier_photos'] ?>/m1.jpeg" width="100" alt="">                    
-                        <img class="photo photo2" src="images/<?= $section['dossier_photos'] ?>/m2.jpeg"  width="100" alt="">
+                        <img class="photo photo1" src="/pages_artisans/<?=  $data['dossier'] ?>/images/<?= $section['dossier_photos'] ?>/m1.jpeg" width="100" alt="">                    
+                        <img class="photo photo2" src="/pages_artisans/<?=  $data['dossier'] ?>/images/<?= $section['dossier_photos'] ?>/m2.jpeg"  width="100" alt="">
                     </p>
                     <p class="services__lambda_photos">
-                        <img class="photo photo4" src="images/<?= $section['dossier_photos'] ?>/m4.jpeg" width="100" alt="">
-                        <img class="photo photo3" src="images/<?= $section['dossier_photos'] ?>/m3.jpeg"  width="100" alt="">                  
+                        <img class="photo photo4" src="/pages_artisans/<?=  $data['dossier'] ?>/images/<?= $section['dossier_photos'] ?>/m4.jpeg" width="100" alt="">
+                        <img class="photo photo3" src="/pages_artisans/<?=  $data['dossier'] ?>/images/<?= $section['dossier_photos'] ?>/m3.jpeg"  width="100" alt="">                  
                     </p>
                     <p class="services__lambda_photos">
-                        <img class="photo photo5" src="images/<?= $section['dossier_photos'] ?>/m5.jpeg" width="100" alt="">                    
-                        <img class="photo photo6" src="images/<?= $section['dossier_photos'] ?>/m6.jpeg" width="100" alt="">
+                        <img class="photo photo5" src="/pages_artisans/<?=  $data['dossier'] ?>/images/<?= $section['dossier_photos'] ?>/m5.jpeg" width="100" alt="">                    
+                        <img class="photo photo6" src="/pages_artisans/<?=  $data['dossier'] ?>/images/<?= $section['dossier_photos'] ?>/m6.jpeg" width="100" alt="">
                     </p>
                     <p class="services__lambda_photos">
-                        <img class="photo photo7" src="images/<?= $section['dossier_photos'] ?>/m7.jpeg"  width="100" alt="">                  
-                        <img class="photo photo8" src="images/<?= $section['dossier_photos'] ?>/m8.jpeg"  width="100" alt="">
+                        <img class="photo photo7" src="/pages_artisans/<?=  $data['dossier'] ?>/images/<?= $section['dossier_photos'] ?>/m7.jpeg"  width="100" alt="">                  
+                        <img class="photo photo8" src="/pages_artisans/<?=  $data['dossier'] ?>/images/<?= $section['dossier_photos'] ?>/m8.jpeg"  width="100" alt="">
                     </p>
                     <p class="services__lambda_photos">
-                        <img class="photo photo9" src="images/<?= $section['dossier_photos'] ?>/m9.jpeg"  width="100" alt="">                   
-                        <img class="photo photo10" src="images/<?= $section['dossier_photos'] ?>/m10.jpeg" width="100" alt="">
+                        <img class="photo photo9" src="/pages_artisans/<?=  $data['dossier'] ?>/images/<?= $section['dossier_photos'] ?>/m9.jpeg"  width="100" alt="">                   
+                        <img class="photo photo10" src="/pages_artisans/<?=  $data['dossier'] ?>/images/<?= $section['dossier_photos'] ?>/m10.jpeg" width="100" alt="">
                     </p>
                 </div>
                 <div class="en-tete__contact">
@@ -247,7 +256,7 @@
             </nav>
         </main>
         <footer class="footer-nav">
-            <a class="mentions-link" href="mentions_legales.php">Mentions légales</a>
+            <a class="mentions-link" href="/pages_artisans/<?= $data['dossier'] ?>/mentions_legales.php">Mentions légales</a>
         </footer>
     </div>
     <script src="/assets/vap/form.js"></script>
