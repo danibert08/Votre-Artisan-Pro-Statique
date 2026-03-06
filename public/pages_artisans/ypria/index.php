@@ -14,11 +14,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex"><!-- A retirer pour chaque artisan -->
     <?php
-        $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? "https" : "http";
-        $host = $_SERVER['HTTP_HOST'];
-        $canonical_url = $protocol . "://" . $host . "/";
-    ?>
-    <?php
         $json_path = __DIR__ . '/datas.json';
         $data = [];
 
@@ -29,6 +24,14 @@
     // Petit message de debug pour la prod
     die("Erreur : Le fichier est introuvable à l'adresse : " . $json_path);
     }
+        $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? "https" : "http";
+            $host = $_SERVER['HTTP_HOST'];
+            $canonical_url = $protocol . "://" . $host . "/";
+            // On récupère le chemin vers le dossier actuel (ex: /pages_artisans/artisan-dupont/)
+            $dir = dirname($_SERVER['PHP_SELF']) . '/';
+
+            // On crée l'URL de base absolue
+            $baseUrl = $protocol . $host . $dir;
 
     ?>
     <link rel="canonical" href="<?= $canonical_url; ?>" />
@@ -61,11 +64,11 @@
 
             <div id="accueil" class="en-tete">
                 <div class="en-tete__hero">
-                    <img class="en-tete__hero_hero-img" src="/pages_artisans/<?= $data['image_hero'];?>"  alt="" >
+                    <img class="en-tete__hero_hero-img" src="<?= $baseUrl . $data['image_hero'];?>"  alt="" >
                 </div>
                 <?php  if(!empty($data['image_logo'])) 
          echo  '<div class="en-tete__logo">
-                    <img class="en-tete__logo_logo-img" src="/pages_artisans/' . $data['image_logo'] . '"  alt="">
+                    <img class="en-tete__logo_logo-img" src="' . $baseUrl . $data['image_logo'] . '"  alt="">
                 </div>' ?>
             </div>
 
@@ -250,7 +253,7 @@
             </nav>
         </main>
         <footer class="footer-nav">
-            <a class="mentions-link" href="/pages_artisans/<?= $data['dossier'] ?>/mentions_legales.php">Mentions légales</a>
+            <a class="mentions-link" href="<?= $baseUrl ?>mentions_legales.php">Mentions légales</a>
         </footer>
     </div>
     <script src="/assets/vap/form.js"></script>
