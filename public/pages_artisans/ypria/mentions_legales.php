@@ -80,7 +80,7 @@
     <div class="en-tete__contact">
         <div class="button" >
             <img class="en-tete__contact_icone" src="/assets/common_assets/icones/telephone.svg" alt=""> 
-            <a class="en-tete__contact-text" href="<?= __DIR__ ?>/index.php">             
+            <a class="en-tete__contact-text" href="pages_artisans/<?= $data['dossier'] ?>/index.php">             
                 Retour
             </a>
         </div>
