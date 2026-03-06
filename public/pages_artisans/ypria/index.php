@@ -60,7 +60,7 @@
                        <?php endforeach;  
                         if (count($data['sections']) <= 2)                      
                             {                          
-                                echo '<li><a href="#whoami">Qui suis-je</a></li>';
+                                echo '<li><a href="#whoami" onclick="document.getElementById(\'whoami\').scrollIntoView({behavior: \'smooth\'}); return false;>Qui suis-je</a></li>';
                             }        
                 ?>                                
                 <li><a href="#contact" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'}); return false;">Contact</a></li>
@@ -258,7 +258,7 @@
                         <?php endforeach;  
                             if (count($data['sections']) <= 2)                      
                                 {                          
-                                    echo '<li><a href="#whoami">Qui suis-je</a></li>';
+                                    echo '<li><a href="#whoami" onclick="document.getElementById(\'whoami\').scrollIntoView({behavior: \'smooth\'}); return false;>Qui suis-je</a></li>';
                                 }        
                     ?>                                
                 <li><a href="#contact" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'}); return false;">Contact</a></li>
