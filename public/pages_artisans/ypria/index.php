@@ -37,8 +37,8 @@
     
     <link rel="canonical" href="<?= $canonical_url; ?>" />
     <title><?= $data['tag_title']; ?></title>
-    <link rel="stylesheet" href="/assets/common_assets/css/reset.css" class="css">
-    <link rel="stylesheet" href="/assets/assets_artisans/css/style.css" class="css">
+    <link rel="stylesheet" href="../../assets/common_assets/css/reset.css" class="css">
+    <link rel="stylesheet" href="../../assets/assets_artisans/css/style.css" class="css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
@@ -66,11 +66,11 @@
 
             <div id="accueil" class="en-tete">
                 <div class="en-tete__hero">
-                    <img class="en-tete__hero_hero-img" src="<?=$baseUrl . $data['image_hero'];?>"  alt="" >
+                    <img class="en-tete__hero_hero-img" src="<?= $data['image_hero'];?>"  alt="" >
                 </div>
                 <?php  if(!empty($data['image_logo'])) 
          echo  '<div class="en-tete__logo">
-                    <img class="en-tete__logo_logo-img" src="'. $baseUrl . $data['image_logo'] . '"  alt="">
+                    <img class="en-tete__logo_logo-img" src="'. $data['image_logo'] . '"  alt="">
                 </div>' ?>
             </div>
 
@@ -116,8 +116,8 @@
                                 <!--     Main1 Pictures     -->
 
                     <p class="services__lambda_photos">
-                        <img class="photo photo1" src="<?= $baseUrl ?><?= $section['dossier_photos'] ?>/m1.jpeg" width="100" alt="">                    
-                        <img class="photo photo2" src="<?= $baseUrl ?><?= $section['dossier_photos'] ?>/m2.jpeg"  width="100" alt="">
+                        <img class="photo photo1" src="<?= $section['dossier_photos'] ?>/m1.jpeg" width="100" alt="">                    
+                        <img class="photo photo2" src="<?= $section['dossier_photos'] ?>/m2.jpeg"  width="100" alt="">
                     </p>
                     <p class="services__lambda_photos">
                         <img class="photo photo4" src="images/<?= $section['dossier_photos'] ?>/m4.jpeg" width="100" alt="">
@@ -255,7 +255,7 @@
             </nav>
         </main>
         <footer class="footer-nav">
-            <a class="mentions-link" href="<?= $baseUrl ?>mentions_legales.php">Mentions légales</a>
+            <a class="mentions-link" href="mentions_legales.php">Mentions légales</a>
         </footer>
     </div>
     <script src="/assets/vap/form.js"></script>
