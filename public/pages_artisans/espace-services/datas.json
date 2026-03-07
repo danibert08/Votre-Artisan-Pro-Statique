@@ -1,0 +1,47 @@
+{
+  "dossier": "espace-services",
+  "nom": "SEILLET",
+  "prenom" : "Bruno",
+  "nom_commercial" : "ESPACE SERVICES",
+  "metier": "CORDONNERIE MULTISERVICE",
+  "activite": "Cordonnerie, clés minute, vente de produits d'entretien, coupes, accessoires se rapportant à l'activité",
+  "commune": "Les Sables d'Olonne",
+  "telephone" : "0251552233",
+  "mail" : "",
+  "forme_juridique": "Sarl",
+  "siren": "377547831",
+  "rue": "32 Rue Jacquard",
+  "ville": "85100 Les Sables d'Olonne",
+  "google_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2746.9008203208646!2d-1.736674223411878!3d46.490276271109366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48046830ec10d9e1%3A0x810dfaa6ecf1ad5!2sEspace%20Services!5e0!3m2!1sfr!2suk!4v1772898146812!5m2!1sfr!2suk",
+  "theme_couleur": "orange",
+  "tag_title": "Espace Services : Cordonnerie, clés minute, vente de produits d'entretien, coupes, accessoires se rapportant à l'activité",
+  "image_hero": "images/hero/h1.jpeg",
+  "image_logo": "images/logo/logo.jpeg",
+  "tiktok": "",
+  "instagram": "",
+  "facebook": "",
+  
+  "services": "Mes services",
+  "sections": [
+    {
+      "id":"1",
+      "activite": "Cordonnerie",
+      "text": "Ne jetez plus, restaurez ! Dans mon atelier, je mets mon savoir-faire d'artisan au service de vos souliers, sacs et accessoires en cuir. De la pose d'un patin de protection à la rénovation complète d'un cuir patiné par le temps, chaque pièce est traitée avec le plus grand soin. <br>Alliant techniques traditionnelles et matériaux de qualité, je m'engage à prolonger la durée de vie de vos articles préférés. Parce qu'un bel objet mérite une seconde chance, confiez-moi vos réparations pour un résultat alliant élégance et solidité.",
+      "dossier_photos": "photos1"
+    }
+   
+  ],
+
+  "price":{
+    "price_first_title": "Paiement",
+    "price_second_title": "Tarif",
+    "price_text": "Je vous propose un travail de qualité et rapide au meilleur prix."
+  },
+  "whoami":{
+    "whoami_first_title":"Qui suis-je",
+    "whoami_text":"35 ans de passion au bout des doigts. <br><br>Depuis plus de trois décennies, je façonne, répare et restaure le cuir sous toutes ses formes. Trente-cinq années à voir défiler les modes, les matières et les défis techniques m'ont appris une chose essentielle : chaque pièce a une âme et mérite l'excellence. <br>Cordonnier de métier et artisan par conviction, je mets cette expérience rare au service de vos souliers et de votre maroquinerie. Là où d'autres s'arrêtent, mon expertise commence. Confier vos objets à mon atelier, c'est choisir l'assurance d'un geste précis, hérité de 35 ans de pratique ininterrompue."
+  }
+
+  
+
+}
