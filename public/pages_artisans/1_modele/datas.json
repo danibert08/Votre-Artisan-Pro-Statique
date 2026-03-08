@@ -25,18 +25,21 @@
   "sections": [
     {
       "id":"1",
+      "navTitle":"",
       "activite": "",
       "text": "",
       "dossier_photos": "photos1"
     },
     {
       "id": "2",
+      "navTitle":"",
       "activite": "",
       "text": "",
       "dossier_photos": "photos2"     
     },
     {
       "id": "3",
+      "navTitle":"",
       "activite": "",
       "text": "",
       "dossier_photos": "photos3"

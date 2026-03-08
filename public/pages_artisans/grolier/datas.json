@@ -25,6 +25,7 @@
   "sections": [
     {
       "id":"1",
+      "navTitle":"Prestations",
       "activite": "Travaux de Plâtrerie",
       "text": "Spécialisé dans l'aménagement intérieur, j'interviens pour transformer vos volumes et optimiser votre confort : <br><br>Cloisonnement : Redistribution de vos pièces pour un nouvel espace de vie. <br><br>Isolation thermique et phonique : Des solutions pour une maison plus économe et silencieuse. <br><br>Faux-plafonds : Intégration de spots et correction acoustique. <br><br>Rénovation : Reprise de murs anciens, fissures et dégâts des eaux. <br><br>Mon expérience me permet d'anticiper les contraintes de chaque chantier pour vous offrir un résultat durable, propre et conforme aux normes.",
       "dossier_photos": "photos1"

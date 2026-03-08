@@ -526,6 +526,9 @@ textarea {
     .mentions-link{
         font-size: 1.2rem;
     }
+    #services1, #services2, #services3{
+        scroll-margin-top: 50px;
+    }
 }
 
  

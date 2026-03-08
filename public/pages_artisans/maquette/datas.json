@@ -4,6 +4,7 @@
   "prenom" : "MaquettePrenom",
   "nom_commercial" : "Ma Maquette",
   "metier": "SaaS",
+  "activite": "Mon activité",
   "commune": "lmes Sables d'Olonne",
   "telephone" : "0658012358",
   "mail" : "daniel@votreartisanpro.fr",
@@ -25,14 +26,14 @@
   "sections": [
     {
       "id": "1",
-      "service":"Services1",
+      "navTitle":"Services1",
       "activite": "Notre activité",
       "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet consequatur, natus, asperiores vitae ipsam provident quo ab minus officia, ipsum quia sequi repellat adipisci modi ipsa eius ducimus? Cumue et ipsa unde, doloremue hic voluptates nesciunt aliquam fugit impedit nemo minus possimus assumenda praesentium earum autem, architecto similique",
       "dossier_photos": "photos1"
     },
     {
       "id": "2",
-      "service":"Services2",
+      "navTitle":"Services2",
       "activite": "Notre activité",
       "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet consequatur, natus, asperiores vitae ipsam provident quo ab minus officia, ipsum quia sequi repellat adipisci modi ipsa eius ducimus? Cumue et ipsa unde, doloremue hic voluptates nesciunt aliquam fugit impedit nemo minus possimus assumenda praesentium earum autem, architecto similique",
       "dossier_photos": "photos1"

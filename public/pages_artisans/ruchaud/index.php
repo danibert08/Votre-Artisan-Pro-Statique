@@ -54,7 +54,7 @@
                             <li>
                                 <a href="#services<?= $section['id'] ?>" 
                                 onclick="document.getElementById('services<?= $section['id'] ?>').scrollIntoView({behavior: 'smooth'}); return false;">
-                                <?= $section['activite'] ?>
+                                <?= $section['navTitle'] ?>
                                 </a>
                             </li>
                        <?php endforeach;  
@@ -253,7 +253,7 @@
                                 <li>
                                     <a href="#services<?= $section['id'] ?>" 
                                     onclick="document.getElementById('services<?= $section['id'] ?>').scrollIntoView({behavior: 'smooth'}); return false;">
-                                    <?= $section['activite'] ?>
+                                    <?= $section['navTitle'] ?>
                                     </a>
                                 </li>
                         <?php endforeach;  

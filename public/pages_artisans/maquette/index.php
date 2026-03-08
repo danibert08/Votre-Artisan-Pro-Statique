@@ -49,16 +49,22 @@
     <div class="container">
         <nav class="navbar navbar-top">      
             <ul class="nav-links">
-                <li><a href="#accueil">Accueil</a></li> 
-                <?php   foreach ($data['sections'] as $section):
-                            echo '<li><a href="#services' . $section['id'] .'">' . $section['activite'] .'</a></li>';
-                        endforeach;  
-                        if (count($data['sections']) === 1)                      
-                        {                          
-                            echo '<li><a href="#whoami">Qui suis-je</a></li>';
-                        }        
-                ?>                                
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#accueil" onclick="document.getElementById('accueil').scrollIntoView({behavior: 'smooth'}); return false;">Accueil</a></li> 
+                <?php   foreach ($data['sections'] as $section): ?>
+                            <li>
+                                <a href="#services<?= $section['id'] ?>" 
+                                onclick="document.getElementById('services<?= $section['id'] ?>').scrollIntoView({behavior: 'smooth'}); return false;">
+                                <?= $section['navTitle'] ?>
+                                </a>
+                            </li>
+                       <?php endforeach;  
+                        if (count($data['sections']) <= 2)                      
+                            {   ?>                        
+                                <li><a href="#whoami" onclick="document.getElementById('whoami').scrollIntoView({behavior: 'smooth'}); return false;">Qui suis-je</a></li>
+                        <?php 
+                            }        
+                        ?>                                
+                <li><a href="#contact" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'}); return false;">Contact</a></li>
             </ul>
         </nav>     
         <header>
@@ -109,7 +115,7 @@
 
             <?php foreach ($data['sections'] as $section) : ?>
                                 <!--       Services  N°1   -->
-
+                
                 <div  id="services<?= $section['id']; ?>" class="services__lambda">
                     <h2  class="services__lambda_title"><?= $section['activite']; ?></h2>
                     <p class="services__lambda_text"> <?= $section['text'] ?></p>
@@ -242,17 +248,23 @@
             <?php endif ?>
             <nav class="navbar navbar-bottom">
                 <ul class="nav-links">
-                    <li><a href="#accueil">Accueil</a></li>
-                    <?php   foreach ($data['sections'] as $section):
-                                echo '<li><a href="#services' . $section['id'] .'">' . $section['service'] .'</a></li>';
-                            endforeach;  
-                            if (count($data['sections']) === 1)                      
-                            {                          
-                                echo '<li><a href="#whoami">Qui suis-je</a></li>';
-                            }        
-                    ?>   
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+                    <li><a href="#accueil" onclick="document.getElementById('accueil').scrollIntoView({behavior: 'smooth'}); return false;">Accueil</a></li> 
+                    <?php   foreach ($data['sections'] as $section): ?>
+                                <li>
+                                    <a href="#services<?= $section['id'] ?>" 
+                                    onclick="document.getElementById('services<?= $section['id'] ?>').scrollIntoView({behavior: 'smooth'}); return false;">
+                                    <?= $section['navTitle'] ?>
+                                    </a>
+                                </li>
+                        <?php endforeach;  
+                            if (count($data['sections']) <= 2)                      
+                            {   ?>                        
+                                <li><a href="#whoami" onclick="document.getElementById('whoami').scrollIntoView({behavior: 'smooth'}); return false;">Qui suis-je</a></li>
+                        <?php 
+                            }                                 
+                        ?>                                  
+                <li><a href="#contact" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'}); return false;">Contact</a></li>
+            </ul>
             </nav>
         </main>
         <footer class="footer-nav">

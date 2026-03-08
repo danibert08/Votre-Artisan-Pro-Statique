@@ -72,7 +72,7 @@
                 (https://www.hostinger.fr)</p><br>
             <h2>Activité :</h2><br>
             <p>Le présent site a pour objet de présenter les services de : <?=  $data['nom_commercial'] ?></p>
-            <p>Description de l’activité : pose de prothèse ongulaire et maquillage</p><br>
+            <p>Description de l’activité : <?= $data['activite'] ?></p><br>
             <h2>Propriété intellectuelle :</h2><br>
             <p>L’ensemble des éléments présents sur ce site (textes, images, logos, structure, design) sont protégés par le Code de la propriété intellectuelle.
             Toute reproduction, représentation, modification ou adaptation, totale ou partielle, sans autorisation préalable écrite est interdite.</p><br>
