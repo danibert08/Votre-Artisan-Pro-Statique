@@ -1,0 +1,49 @@
+{
+  "dossier": "abs",
+  "nom": "BONNET",
+  "prenom" : "Youri",
+  "nom_commercial" : "ARTISAN BONNET SERRURIER",
+  "metier": "SERRURIER",
+  "activite": "Travaux de menuiserie métallique et serrurerie",
+  "genre_publication": "Le directeur",
+  "commune": "La Rochelle",
+  "telephone" : "0610010004",
+  "mail" : "",
+  "forme_juridique": "Sarl",
+  "siren": "878825470",
+  "rue": "4 Rue de Dompierre",
+  "ville": "17000 La Rochelle",
+  "google_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2763.361327528217!2d-1.1382408000000002!3d46.163462599999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4801533f8e346e23%3A0xfe49c6e3abd2b5f6!2sABS%20ARTISAN%20SERRURIER%20BONNET%20%26%20FILS%20DEPANNAGE%20LA%20ROCHELLE%207%2F7%2024H%2F24%20%C3%8ELE%20DE%20R%C3%89!5e0!3m2!1sfr!2sfr!4v1773154156723!5m2!1sfr!2sfr",
+  "theme_couleur": "purple",
+  "tag_title": "ABS ARTISAN BONNET SERRURIER : Fabrication réparation et pose de toutes serrures, charnières,verrous et autres fermetures métalliques , vente de tous produits utilitaires de Quicaillerie et de miroiterie, prestations de dépannage pour l'ouverture de coffre fort et réparation de volets roulants",
+  "image_hero": "images/hero/h1.jpeg",
+  "image_logo": "images/logo/logo.jpeg",
+  "tiktok": "",
+  "instagram": "",
+  "facebook": "",
+  
+  "services": "Mes services",
+  "sections": [
+    {
+      "id":"1",
+      "navTitle":"Serrurerie",
+      "activite": "Travaux de menuiserie métallique et serrurerie",
+      "text": "ABS ARTISAN SERRURIER BONNET est votre interlocuteur privilégié à La Rochelle et sur l'Île de Ré pour tous vos besoins en serrurerie.<br><br> L'entreprise s’engage à fournir une assistance rapide et fiable, avec une disponibilité exceptionnelle, même les jours fériés. Profitez d'une expertise reconnue pour l'ouverture, le dépannage et l’installation de serrures.",
+      "dossier_photos": "photos1"
+    }
+  
+  ],
+
+  "price":{
+    "price_first_title": "Paiement",
+    "price_second_title": "Tarif",
+    "price_text": "Mes tarifs sont étudiés pour vous offrir la transparence totale : un devis détaillé est établi avant chaque début de chantier et le bon diagnostic dès la première minute pour éviter les remplacements inutiles.<br><br>Le saviez-vous ? Un serrurier d'expérience sait souvent ouvrir une porte sans détruire la serrure, vous faisant ainsi économiser le prix d'un mécanisme neuf."
+  },
+  "whoami":{
+    "whoami_first_title":"Qui suis-je",
+    "whoami_text":"La serrurerie ne s'improvise pas. Je mets mon savoir-faire au service de votre sérénité. Que ce soit pour une installation de haute sécurité ou une remise aux normes après une effraction, j'apporte une réponse technique précise et durable. <br><br>Spécialiste des mécanismes de précision, je maîtrise aussi bien la serrurerie ancienne que les systèmes de fermeture les plus modernes. Mon engagement ? Un conseil d'expert, des produits certifiés et une pose réalisée dans les règles de l'art pour protéger durablement votre foyer ou votre commerce."
+  }
+
+  
+
+}

@@ -24,12 +24,14 @@
   "sections": [
     {
       "id":"1",
+      "navTitle":"Ongles",
       "activite": "Ongles",
       "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet consequatur, natus, asperiores vitae ipsam provident quo ab minus officia, ipsum quia sequi repellat adipisci modi ipsa eius ducimus? Cumque et ipsa unde, doloremque hic voluptates nesciunt aliquam fugit impedit nemo minus possimus assumenda praesentium earum autem, architecto similique ",
       "dossier_photos": "photos1"
     },
     {
       "id": "2",
+      "navTitle": "Maquillage",
       "activite": "Maquillage",
       "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet consequatur, natus, asperiores vitae ipsam provident quo ab minus officia, ipsum quia sequi repellat adipisci modi ipsa eius ducimus? Cumque et ipsa unde, doloremque hic voluptates nesciunt aliquam fugit impedit nemo minus possimus assumenda praesentium earum autem, architecto similique ",
       "dossier_photos": "photos2"     
