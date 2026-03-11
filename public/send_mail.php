@@ -150,7 +150,7 @@ $artisanMap = [
     'la-cle-vendeenne' => 'daniel@votreartisanpro.fr',
     'sables-decor' => 'daniel@votreartisanpro.fr',
     'gilfredo' => 'daniel@votreartisanpro.fr',
-    'un-zeste-de-bois' => 'daniel@votreartisanpro.fr, informacc85@gmail.com'
+    'un-zeste-de-bois' => 'informacc85@gmail.com'
 ];
 
 $artisanEmail = $artisanMap[$sd] ?? null;
@@ -187,6 +187,7 @@ if (!$apiKey) {
 $data = [
     "sender" => ["name" => "VotreArtisanPro", "email" => "daniel@votreartisanpro.fr"],
     "to" => [["email" => $artisanEmail]],
+    "cc" => ["email" => "daniel@votreartisanpro.fr"],
     "replyTo" => ["email" => $email, "name" => $nom],
     "subject" => "Nouveau contact pour {$sd}",
     "textContent" => "Demande envoyée depuis le formulaire de {$sd}.votreartisanpro.fr\n\n".
