@@ -16,7 +16,7 @@
         <div>
             <h2>Éditeur du site :</h2><br>    
             <p>Le présent site est édité par :</p><br>
-            <p>Nom / Raison sociale : <?= $data['raison_sociale'] ?><p>
+            <p>Nom : <?= $data['raison_sociale'] ?><p>
             <p>Forme juridique : <?= $data['forme_juridique'] ?></p>
             <p>SIREN : <?= $data['siren'] ?></p><br>
             <p>Adresse du siège social : </p><br>

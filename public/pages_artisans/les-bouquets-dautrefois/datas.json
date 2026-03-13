@@ -1,0 +1,56 @@
+{
+  "dossier": "les-bouquets-dautrefois",
+  "nom": "FREMION",
+  "prenom" : "Manon",
+  "raison_sociale": "Les bouquets d'autrefois",
+  "nom_commercial" : "LES BOUQUETS D'AUTREFOIS",
+  "metier": "Fleuriste",
+  "activite": "Commerce de détail de fleurs, plantes, graines",
+  "genre_publication": "Le directeur",
+  "commune": "Les Sables d'Olonne",
+  "telephone" : "0765853892",
+  "mail" : "lesbouquetsdautrefois@gmail.com",
+  "forme_juridique": "Eurl",
+  "siren": "913064036",
+  "rue": "16 Rue du Maréchal de Lattre de Tassigny",
+  "ville": "85340 Les Sables d'Olonne",
+  "google_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2743.3225688817433!2d-1.7818481!3d46.5610861!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa613f1875d655711%3A0xb3767246abe466b0!2sLes%20Bouquets%20d&#39;Autrefois!5e0!3m2!1sfr!2sfr!4v1773406156554!5m2!1sfr!2sfr",
+  "theme_couleur": "orange",
+  "tag_title": "LES BOUQUETS D'AUTREFOIS : Commerce de détail de fleurs, plantes, graines, engrais, animaux de compagnie et aliments pour ces animaux en magasin spécialisé",
+  "image_hero": "images/hero/h1.jpeg",
+  "image_logo": "images/logo/logo.jpeg",
+  "tiktok": "",
+  "instagram": "https://www.instagram.com/lesbouquetsdautrefois/",
+  "facebook": "https://www.facebook.com/manonfremion?locale=fr_FR",
+  
+  "services": "Mes services",
+  "sections": [
+    {
+      "id":"1",
+      "navTitle":"Fleurs",
+      "activite": "Artisan fleuriste Bouquets de saison, fleurs séchées, évènementiels, commandes et livraisons.",
+      "text": "Bienvenue dans mon univers floral, où chaque pétale raconte une histoire. <br><br>Passionné(e) par la nature et le design végétal, j'ai à cœur de transformer vos émotions en compositions uniques. <br><br>Que ce soit pour célébrer un grand moment de vie, fleurir votre quotidien ou simplement offrir un sourire, je sélectionne avec soin des fleurs de saison pour créer des bouquets qui vous ressemblent. <br><br>Ici, l’artisanat rencontre la poésie pour sublimer chaque occasion",
+      "dossier_photos": "photos1"
+    },
+    {
+      "id": "2",
+      "navTitle":"Boutique",
+      "activite": "Chaleureuse et Artisanale",
+      "text": "Les bouquets d'autrefois propose des bouquets de fleurs fraîches, de fleurs séchées, des compositions pour les mariages, baptêmes, décès et également des plantes d’intérieur et d’extérieure. Livraison sur toute l’agglomération.",
+      "dossier_photos": "photos2"     
+    }
+  ],
+
+  "price":{
+    "price_first_title": "Paiement",
+    "price_second_title": "Tarif",
+    "price_text": "Parce que chaque création est unique et dépend des arrivages de la saison, nos tarifs s'adaptent à vos envies et à votre budget.<br><br>Le prix d'une composition varie selon trois critères :<br><br>La rareté et la variété des fleurs choisies.<br><br>Le volume et la complexité technique de la création.<br><br>La saisonnalité (respecter le cycle de la nature nous permet de vous garantir la meilleure tenue).<br><bR>N’hésitez pas à nous confier votre budget : notre métier est de composer la plus belle harmonie pour le montant que vous avez fixé."
+  },
+  "whoami":{
+    "whoami_first_title":"Qui suis-je",
+    "whoami_text":"J'ai la passion des fleurs depuis mon plus jeune âge, il paraissait donc évident que cela devienne mon métier. CAP et brevet professionnel en poche, j'ai  ensuite  acquis de l’expérience pendant quatre ans chez un fleuriste sablais .<br><br>En 2022, je  franchis le pas , en me mettant à mon compte. La boutique des bouquets d’autrefois naît. <br><br>Avec mon camion vintage, je faisais le marché Arago et le marché de la Pironnière. <br><br>Mon projet était d’ouvrir une boutique, aussi, lorsque l’occasion s’est présentée à L’Île-d’Olonne, je n’ai pas hésité "
+  }
+
+  
+
+}
