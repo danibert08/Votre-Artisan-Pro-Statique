@@ -178,7 +178,7 @@
                 </div>
                 <div class="form-group">
                     <label for="tel">Téléphone</label>
-                    <input type="text" id="tel" name="tel" placeholder="0612345678" size="10" plarequired>
+                    <input type="text" id="tel" name="tel" placeholder="0612345678" minlength="10" maxlength="10" required>
                 </div>
                 <div class="form-group">
                     <label for="email">Email</label>
