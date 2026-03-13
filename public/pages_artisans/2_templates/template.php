@@ -72,7 +72,7 @@
 
             <div class="en-tete__contact">
                 <div class="button" >
-                    <img class="en-tete__contact_icone" src="/assets/common_assets/icones/telephone.svg" alt=""> 
+                    <img class="en-tete__contact_icone" src="/assets/common_assets/icones/telephone.svg" alt="">
                     <a class="en-tete__contact-text" href="tel: +33 <?= substr($data['telephone'],1) ?>">             
                          <?=  implode(' ', str_split($data['telephone'], 2)); ?>
                     </a>

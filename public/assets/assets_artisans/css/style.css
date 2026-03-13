@@ -740,10 +740,10 @@ body.june{
     --container-bg-color: white; 
 }
 body.dark-blue{
-    --button-bg-color: #136f7e;
+    --button-bg-color: #2fadc4;
     --button-border-color:black;
-    --button-text-color:white;
-    --button-icone-color: white;
+    --button-text-color:black;
+   
     /* --button-box-shadow:  #87b4e1; */
     --services-box-shadow: #1289A7;
     --photo-shadow: #2e2027;
