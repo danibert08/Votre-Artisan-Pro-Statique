@@ -28,7 +28,7 @@
       "id":"1",
       "navTitle":"Cordonnerie",
       "activite": "Cordonnerie",
-      "text": "En plus de la réparation et l'entretien de chaussures et d’articles en cuir, la Cordonnerie Authen-Couture vous propose d'autres services : vente de produits d'entretien - clés - gravure - plaque d'immatriculation - couture et retouche vêtements et tissus. <br><br> Elle vous accueille au Centre Commercial Super-U à Saint-Gilles-Croix-de-Vie. Découvrez un service de qualité et une expertise inégalée. <br><br>L'équipe qualifiée d'Authen'Couture s'engage à redonner vie à vos chaussures préférées et à les rendre aussi belles qu'au premier jour. Que ce soit pour des réparations mineures ou majeures, vous pouvez faire confiance à ces experts de la cordonnerie pour offrir un service impeccable.",
+      "text": "En plus de la réparation et l'entretien de chaussures et d’articles en cuir, la Cordonnerie Authen-Couture vous propose d'autres services : vente de produits d'entretien - clés - gravure - plaque d'immatriculation - couture et retouche vêtements et tissus. <br><br> Elle vous accueille à son atelier situé au Centre Commercial Super-U à Saint-Gilles-Croix-de-Vie. <br><br>Découvrez un service de qualité et une expertise inégalée. <br><br>L'équipe qualifiée d'Authen'Couture s'engage à redonner vie à vos chaussures préférées et à les rendre aussi belles qu'au premier jour. <br><br>Que ce soit pour des réparations mineures ou majeures, vous pouvez faire confiance à ces experts de la cordonnerie pour offrir un service impeccable.",
       "dossier_photos": "photos1"
     }
    
@@ -38,7 +38,7 @@
   "price":{
     "price_first_title": "Paiement",
     "price_second_title": "Tarif",
-    "price_text": "Chez nous, chaque intervention est unique. Nos tarifs reflètent la qualité des matériaux utilisés et la précision d'un geste artisanal maîtrisé depuis plus de trois décennies. <br><br>Diagnostic Gratuit : Nous examinons vos articles (chaussures, sacs) et vous proposons la solution la plus durable. <br><br>Devis Clair : Pas de mauvaise surprise. Chaque prestation fait l'objet d'un prix annoncé à l'avance. <br><br>Engagement Durabilité : Un tarif chez un artisan d'expérience, c'est l'assurance d'une réparation qui dure dans le temps, vous évitant ainsi de racheter du neuf."
+    "price_text": "Chez nous, chaque intervention est unique. <br><br>Nos tarifs reflètent la qualité des matériaux utilisés et la précision d'un geste artisanal maîtrisé depuis plus de trois décennies. <br><br>Diagnostic Gratuit : Nous examinons vos articles (chaussures, sacs) et vous proposons la solution la plus durable. <br><br>Devis Clair : Pas de mauvaise surprise. Chaque prestation fait l'objet d'un prix annoncé à l'avance. <br><br>Engagement Durabilité : Un tarif chez un artisan d'expérience, c'est l'assurance d'une réparation qui dure dans le temps, vous évitant ainsi de racheter du neuf."
   },
   "whoami":{
     "whoami_first_title":"Qui suis-je",
