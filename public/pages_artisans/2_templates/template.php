@@ -173,6 +173,14 @@
                     <input type="text" id="name" name="nom" placeholder="Votre nom" required>
                 </div>
                 <div class="form-group">
+                    <label for="firstname">Prenom</label>
+                    <input type="text" id="firstname" name="prenom" placeholder="Votre prénom" required>
+                </div>
+                <div class="form-group">
+                    <label for="tel">Téléphone</label>
+                    <input type="text" id="tel" name="tel" placeholder="0612345678" size="10" plarequired>
+                </div>
+                <div class="form-group">
                     <label for="email">Email</label>
                     <input type="email" id="email" name="email" placeholder="Votre email" required>
                 </div>

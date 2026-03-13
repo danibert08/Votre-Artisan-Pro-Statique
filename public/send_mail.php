@@ -168,6 +168,8 @@ if (!$artisanEmail) {
 ========================= */
 
 $nom     = htmlspecialchars(trim($_POST["nom"] ?? ''), ENT_QUOTES, 'UTF-8');
+$prenom     = htmlspecialchars(trim($_POST["prenom"] ?? ''), ENT_QUOTES, 'UTF-8');
+$tel     = htmlspecialchars(trim($_POST["tel"] ?? ''), ENT_QUOTES, 'UTF-8');
 $email   = htmlspecialchars(trim($_POST["email"] ?? ''), ENT_QUOTES, 'UTF-8');
 $sujet   = htmlspecialchars(trim($_POST["subject"] ?? ''), ENT_QUOTES, 'UTF-8');
 $message = htmlspecialchars(trim($_POST["message"] ?? ''), ENT_QUOTES, 'UTF-8');
@@ -194,7 +196,7 @@ $data = [
     "replyTo" => ["email" => $email, "name" => $nom],
     "subject" => "Nouveau contact pour {$sd}",
     "textContent" => "Demande envoyée depuis le formulaire de {$sd}.votreartisanpro.fr\n\n".
-                     "Objet: {$sujet}\nNom: {$nom}\nEmail: {$email}\n\nMessage:\n{$message}"
+                     "Objet: {$sujet}\nNom: {$nom}\nPrenom: {$prenom}\nTéléphone: {$tel}\nEmail: {$email}\n\nMessage:\n{$message}"
 ];
 
 $ch = curl_init("https://api.brevo.com/v3/smtp/email");
