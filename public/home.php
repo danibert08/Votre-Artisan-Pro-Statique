@@ -31,9 +31,26 @@
             <p>Vous n'avez rien d'autre à faire, et votre site sera en ligne dans les 24h (souvent moins)</p><br>
             <br><p>Un site pour votre activité, adapté à tous les écrans, simple, efficace, prêt à l’emploi,
             et optimisé pour le référencement google</p><br><br>
+                <p>Choisissez votre thème couleur : </p>
+            <div class="choix_theme">
+                <div class="themex5">
+                    <p><a href="purple">Purple</a></p>
+                    <p><a href="special">Spécial</a></p>
+                    <p><a href="souris">Souris</a></p>
+                    <p><a href="cuir">Cuir</a></p>
+                    <p><a href="ocean">Océan</a></p>
+                </div>
+                <div class=themex5>
+                    <p><a href="lagon">Lagon</a></p>
+                    <p><a href="feuillage">Feuillage</a></p>
+                    <p><a href="terre">Terre</a></p>
+                    <p><a href="bonbon">bonbon</a></p>
+                    <p><a href="ciel">ciel</a></p>
+                </div>
+            </div>
             <p>**************</p><br>
             <p><u>Tarif unique sans coûts cachés :</u></p><br><br>
-            <p>Une seule fois 99€ pour la réalisation.</p><br>
+            <p>Une seule fois 49€ pour la réalisation.</p><br>
             <p>Puis seulement 12,99€/mois pour l'hébergement, la maintenance,les mises a jour et les petites modifications.</p><br>
             <p>**************</p>
         </div>

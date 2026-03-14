@@ -1,0 +1,50 @@
+{
+  "dossier": "souris",
+  "nom": "DOE",
+  "prenom" : "John",
+  "raison_sociale": "Doe peinture",
+  "nom_commercial" : "PEINTURE JOHN",
+  "metier": "Peintre",
+  "activite": "Peinture et décoration d'intérieur",
+  "genre_publication": "Le directeur",
+  "commune": "Les Sables d'Olonne",
+  "telephone" : "0612345678",
+  "mail" : "peinture@peinture.fr",
+  "forme_juridique": "Sarl",
+  "siren": "123456789",
+  "rue": "Rue des artistes",
+  "ville": "85100 Les Sables d'Olonne",
+  "google_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17120.34028034621!2d-1.7932093230314996!3d46.49652115718339!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480467f399c54809%3A0xeff2e2d3e31bfdac!2sMairie%20des%20Sables-d&#39;Olonne!5e0!3m2!1sfr!2suk!4v1773479441152!5m2!1sfr!2suk",
+  "theme_couleur": "grey",
+  "tag_title": "",
+  "image_hero": "images/hero/h1.jpeg",
+  "image_logo": "images/logo/logo.jpeg",
+  "tiktok": "peintre",
+  "instagram": "peintre",
+  "facebook": "#",
+  
+  "services": "Mes services",
+  "sections": [
+    {
+      "id":"1",
+      "navTitle":"Réalisations",
+      "activite": "Peinture",
+      "text": "Titre : Redonnez vie à vos espaces avec une finition d'expert <br><br>Passionné par la décoration et le travail bien fait, j'accompagne les particuliers et les professionnels dans tous leurs projets de rénovation intérieure. <br><br>Mon objectif ? Transformer votre intérieur en un lieu qui vous ressemble, avec une exécution impeccable.<br><br>Qu'il s'agisse d'un rafraîchissement complet ou d'une mise en couleur audacieuse, je m'engage à fournir un travail soigné, une protection rigoureuse de vos sols et mobiliers, et le respect de vos délais.<br><br> Je vous conseille également sur le choix des teintes et des matériaux pour un résultat durable et esthétique.",
+      "dossier_photos": "photos1"
+    }
+
+  ],
+
+  "price":{
+    "price_first_title": "Paiement",
+    "price_second_title": "Tarif",
+    "price_text": "Parce que peindre un mur neuf n'est pas le même métier que de restaurer un plafond ancien, je ne propose pas de prix fixe standardisé. Mes tarifs dépendent de plusieurs critères : <br><br>L'état des surfaces : Plus la préparation est importante, plus le résultat sera durable.<br><br>La qualité de la peinture : Je travaille avec des gammes professionnelles pour un rendu optimal.<br><br>La configuration des lieux : Hauteur sous plafond, accès, pièces meublées.<br><br>Contactez-moi pour un devis gratuit et détaillé. Je me déplace chez vous pour évaluer vos besoins sans engagement."
+  },
+  "whoami":{
+    "whoami_first_title":"Qui suis-je",
+    "whoami_text":"Peintre d'intérieur depuis une décennie, j'ai transformé des centaines de pièces et relevé tous les défis techniques : des rénovations lourdes de bâtisses anciennes aux finitions ultra-modernes d'appartements neufs.<br><br>En 10 ans de métier, j'ai affiné ma technique pour vous garantir un geste précis, une préparation de support impeccable et un choix de matériaux durables. Faire appel à mon entreprise, c'est choisir l'assurance d'un chantier maîtrisé de A à Z, sans mauvaises surprises, avec la rigueur d'un artisan qui aime le travail bien fait."
+  }
+
+  
+
+}

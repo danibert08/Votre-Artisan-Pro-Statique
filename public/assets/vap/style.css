@@ -28,6 +28,13 @@ h1{
 h2{
     font-size: 2rem;
 }
+.choix_theme{
+    display: flex;
+    justify-content: center;
+}
+.themex5{
+    width: 200px;
+}
 /* color : #0249AF */
  /*********************/
                     /*** form contact ***/
