@@ -1,62 +1,84 @@
-CONDITIONS GÉNÉRALES D’UTILISATION (CGU)
-1. Objet
-Les présentes CGU ont pour objet de définir les conditions d’utilisation de la plateforme [Nom commercial].
-2. Accès au service
-L’accès est réservé aux professionnels artisans du bâtiment.
-L’utilisateur garantit :
-Être majeur
-Exercer une activité professionnelle légale
-Fournir des informations exactes
-3. Compte utilisateur
-L’utilisateur est responsable :
-De la confidentialité de ses identifiants
-De l’utilisation de son compte
-Toute utilisation frauduleuse doit être signalée immédiatement.
-4. Contenu publié
-L’utilisateur est seul responsable des contenus publiés sur son site.
-Il s’engage à ne pas publier :
-Contenus illégaux
-Contenus diffamatoires
-Contenus contrefaisants
-Images sans droits
-Le Prestataire se réserve le droit de suspendre tout site non conforme.
-5. Disponibilité
-La plateforme est accessible 24h/24, sauf interruption pour maintenance ou cas de force majeure.
-Aucune garantie de disponibilité permanente n’est donnée.
-6. Suspension / Résiliation
-Le Prestataire peut suspendre un compte en cas :
-De non-paiement
-De violation des CGV / CGU
-D’utilisation frauduleuse
-7. Limitation de responsabilité
-Le Prestataire ne garantit pas :
-Le référencement naturel
-Le nombre de visiteurs
-Les résultats commerciaux
-La responsabilité est limitée aux montants versés sur les 12 derniers mois.
-8. Droit applicable
-Les présentes CGU sont soumises au droit français.
-Tout litige relève des tribunaux compétents du siège social.
 
 
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <base href="<?php echo $baseUrl; ?>">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/common_assets/css/reset.css" class="css">
+    <link rel="stylesheet" href="/assets/assets_artisans/css/style.css" class="css">
+    
+    <title><?= $data['nom_commercial'] . ' - Mentions Légales'; ?></title>
+</head>
+<body id="body" class="<?= $data['theme_couleur'] ?>">  
+    <main class="mentions">
+        <h1>CONDITIONS GÉNÉRALES D’UTILISATION (CGU)</h1><br>
+        <div>
+            <h2>1. Objet</h2><br>    
+            <p>Les présentes CGU ont pour objet de définir les conditions d’utilisation de la plateforme "votrartisanpro.fr".</p><br>
+        </div>
+        <div>
+            <h2>2. Accès au service</h2><br>    
+            <p>L’accès est réservé aux artisans.</p><br>
+            <p>L’utilisateur garantit :<br><br>
+            - Être majeur<br>
+            - Exercer une activité professionnelle légale<br>
+            - Fournir des informations exactes.</p><br>
+        </div>
+        <div>
+            <h2>3. Compte utilisateur</h2><br>    
+            <p>L’utilisateur est responsable :<br><br>
+            - De la confidentialité de ses identifiants<br>
+            - De l’utilisation de son compte<br><br>
+            Toute utilisation frauduleuse doit être signalée immédiatement.</p><br>
+        </div>
+        <div>
+            <h2>4. Contenu publié</h2><br>    
+            <p>L’artisan est seul responsable des contenus publiés sur son site.</p>
+            <p>Il s’engage à ne pas publier :<br><br>
+            - Contenus illégaux<br>
+            - Contenus diffamatoires<br>
+            - Contenus contrefaisants<br>
+            - Images sans droits<br><br>
+            Le Prestataire se réserve le droit de suspendre tout site non conforme.</p><br>
+        </div>
+        <div>
+            <h2>5. Disponibilité</h2><br>    
+            <p>La plateforme est accessible 24h/24, sauf interruption pour maintenance ou cas de force majeure.</p>
+            <p>Aucune garantie de disponibilité permanente n’est donnée.</p><br>
+        </div>
+        <div>
+            <h2>6. Suspension / Résiliation</h2><br>    
+            <p>Le Prestataire peut suspendre un compte en cas :<br><br>
+            - De non-paiement<br>
+            - De violation des CGV / CGU<br>
+            - D’utilisation frauduleuse</p><br>
+            <p>Toute utilisation frauduleuse doit être signalée immédiatement.</p><br>
+        </div>
+        <div>
+            <h2>7. Limitation de responsabilité</h2><br>    
+            <p>Le Prestataire ne garantit pas :<br><br>
+            - Le référencement naturel<br>
+            - Le nombre de visiteurs<br>
+            - Les résultats commerciaux</p><br>
+            <p>La responsabilité est limitée aux montants versés sur les 12 derniers mois.</p><br>
+        </div>
+        <div>
+            <h2>8. Droit applicable</h2><br>    
+            <p>Les présentes CGU sont soumises au droit français.<br><br>
+            Tout litige relève des tribunaux compétents du siège social.</p><br>
+        </div>
+       
+    </main>
+    <div class="en-tete__contact">
+        <div class="button" >
+            <img class="en-tete__contact_icone" src="/assets/common_assets/icones/telephone.svg" alt=""> 
+            <a class="en-tete__contact-text" href="/home.php">             
+                Retour
+            </a>
+        </div>
+    </div>
+</body>
+</html>
 
-CONDITIONS GÉNÉRALES D’UTILISATION – INFORMACC
-1. Accès
-Réservé aux professionnels artisans du bâtiment.
-Le client garantit :
-Exercer légalement
-Fournir des informations exactes
-2. Contenus
-Le client est seul responsable du contenu publié.
-Interdits :
-Contenus illégaux
-Contenus diffamatoires
-Utilisation d’images sans droits
-Pratiques trompeuses
-InformAcc peut supprimer tout contenu litigieux sans préavis.
-3. Sécurité
-Le client est responsable de la confidentialité de ses identifiants.
-4. Disponibilité
-InformAcc s’efforce d’assurer un accès continu.
-Des interruptions pour maintenance peuvent survenir.
-Aucune garantie de disponibilité 100%.

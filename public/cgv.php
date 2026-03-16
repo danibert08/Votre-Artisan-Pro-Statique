@@ -1,3 +1,6 @@
+
+
+
 CONDITIONS GÉNÉRALES DE VENTE (CGV)
 1. Objet
 Les présentes Conditions Générales de Vente (CGV) ont pour objet de définir les conditions dans lesquelles la société [Nom de ta société], ci-après « le Prestataire », propose aux professionnels artisans du bâtiment la création et l’hébergement de sites internet via la plateforme [Nom commercial].

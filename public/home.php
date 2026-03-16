@@ -27,14 +27,18 @@
 
         <div>
             <h1>Obtenez votre site professionnel clé en main pour votre activité artisanale</h1><br>
-            <h2>Nous vous simplifions la tâche :</h2><br>
-            <p>Vous communiquez les informations et les photos, et nous nous occupons du reste.</p>
+            <h2>Votre Artisan Pro c'est quoi ?</h2>
+            <p>votreartisanpro.fr est la plateforme qui permet aux artisans d'obtenir une visibilté sur internet en complément de leurs réseaux sociaux, au travers d'un site internet à <b>prix mini </b>avec un <b>abonnement minimal</b> pour l'hébergement, la maintenance, les petites modifications, et les mises à jour, et le tout sans compétence technique particulière dans ce domaine.</p>
+            <p>En effet les réseaux sociaux permettent la fidélisation, alors qu'un site internet est plutôt destiné à apparaître dans les moteurs de recherche, afin de conquérir de nouveaux clients.</p><br>
+            <h2>Nous vous simplifions la tâche :</h2>
+            <p>Vous communiquez les informations ainsi que les photos, et nous nous occupons du reste.</p>
             <p>Vous n'avez rien d'autre à faire, et votre site sera en ligne dans les 24h (souvent moins)</p>
             <p>Un site pour votre activité, adapté à tous les écrans, simple, efficace, prêt à l’emploi,
             et optimisé pour le référencement google.</p>
             <p>Le site comprend un menu, une en-tête avec image et logo, de une à trois sections avec pour chacune 10 photos, la localisation google map, une section tarif, une section qui suis-je, un formulaire de contact et les liens vers vos réseaux sociaux si vous en disposez.</p>
-                <p>Vous trouverez par ailleurs un grand choix de thème couleur.</p>
-                <p>Cliquez sur l'image pour en voir plus !</p><br><br>
+            <p>Vous bénéficiez d'un nom de domaine offert sous la forme : entreprise.votreartisanpro.fr</p>
+            <p>Vous trouverez par ailleurs un grand choix de thème couleur.</p>
+            <p><b>Cliquez sur l'image pour en voir plus !</b></p><br><br>
             <div class="choix_theme">
                 <div   class="services__lambda">
                     
@@ -74,17 +78,18 @@
                 </div>
             </div>
             <p>**************</p><br>
-            <p><u>Tarif unique sans coûts cachés :</u></p><br><br>
-            <p>Une seule fois 49€ pour la réalisation.</p><br>
-            <p>Puis seulement 12,99€/mois pour l'hébergement, la maintenance,les mises a jour et les petites modifications.</p><br>
+            <p><u>Tarif unique sans coûts cachés :</u></p><br>
+            <p>Une seule fois 49€ pour la réalisation.</p>
+            <p>Puis seulement 12,99€/mois pour l'hébergement, la maintenance, les mises a jour et les petites modifications.</p><br>
             <p>**************</p><br>
-            <p>Vous êtes convaincus ? </p><br>
+            <p><u>Vous êtes convaincus ? </u></p><br>
             <p>Alors remplissez dès à présent le formulaire ci-dessous.</p>
             <p>Dans la partie message, renseignez votre Siren, et en option vos textes par section, mais je peux m'en charger si vous préférez.</p>
             <p>Puis adressez-moi 11 photos en format paysage par whatsApp au 07.45.06.34.58, ainsi que votre logo si vous en avez un.</p>
             <p>**************</p>
             <p>Votre site internet sera en ligne dans les 24 heures</p>
             <p>Vous recevrez ensuite un lien de paiement pour effectuer votre règlement</p>
+            <p>Le premier paiement de votre abonnement interviendra 30 jours plus tard.</p>
             <p>**************</p>
         </div>
 
@@ -134,11 +139,11 @@
     </main>
     <footer>
         <div class="conditions_generales">
-            <a href="#">CGU</a>
+            <a href="cgu.php">CGU</a>
             <span>-</span>
-            <a href="#">CGV</a>
+            <a href="/cgv.php">CGV</a>
             <span>-</span>
-            <a href="#">Mentions légales</a>
+            <a href="/mentions_legales.php">Mentions légales</a>
         </div>
     </footer>
 <script src="/assets/vap/form.js"></script>
