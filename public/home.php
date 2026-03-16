@@ -80,7 +80,7 @@
             <p>**************</p><br>
             <p>Vous êtes convaincus ? </p><br>
             <p>Alors remplissez dès à présent le formulaire ci-dessous.</p>
-            <p>Dans la partie message, renseignez votre Siren, et en option vos textes par section, je peux m'en charger si vous préférez.</p>
+            <p>Dans la partie message, renseignez votre Siren, et en option vos textes par section, mais je peux m'en charger si vous préférez.</p>
             <p>Puis adressez-moi 11 photos en format paysage par whatsApp au 07.45.06.34.58, ainsi que votre logo si vous en avez un.</p>
             <p>**************</p>
             <p>Votre site internet sera en ligne dans les 24 heurs</p>
@@ -132,6 +132,15 @@
             <div id="form-response"></div>
         </form>
     </main>
+    <footer>
+        <div class="conditions_generales">
+            <a href="#">CGU</a>
+            <span>-</span>
+            <a href="#">CGV</a>
+            <span>-</span>
+            <a href="#">Mentions légales</a>
+        </div>
+    </footer>
 <script src="/assets/vap/form.js"></script>
             
 </body>
