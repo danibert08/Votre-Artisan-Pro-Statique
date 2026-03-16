@@ -116,7 +116,7 @@ input:focus, textarea:focus {
 
 textarea {
     resize: vertical;
-    min-height: 100px;
+    min-height: 250px;
 }
 #form-response {
     margin-top: 15px;

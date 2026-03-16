@@ -95,7 +95,7 @@
 
 
         <form id="contact" class="form-container" novalidate>
-            <h2>Demande d'informations</h2>
+            <h2>Formulaire</h2>
             <input type="hidden" name="csrf_token" value="<?= $_SESSION['csrf_token']; ?>">
             <div class="form-group">
                 <label for="nom">Nom</label>
