@@ -15,7 +15,7 @@
     ?>
     <link rel="shortcut icon" type="image/jpeg" href="<?= $favicon ?>">
     <!-- Apple Touch Icon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="<?=  file_exists($_SERVER['DOCUMENT_ROOT'] . '/pages_artisans/' . $data['dossier'] . '/images/logo/logo.jpeg')  ? '/public/pages_artisans/' . $data['dossier'] . '/images/logo/logo.jpeg'  :  '/assets/vap/favicon.jpeg'?>">
+    <link rel="apple-touch-icon" sizes="180x180" href="<?= $favicon ?>">
     <link rel="stylesheet" href="../../assets/common_assets/css/reset.css" class="css">
     <link rel="stylesheet" href="../../assets/assets_artisans/css/style.css" class="css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
