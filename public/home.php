@@ -78,9 +78,6 @@
                         <a class="theme_link" href="https://mon-ferronnier.votreartisanpro.fr">Souris<br><img class="photo photo11" src="/images_vap/photos1/m11.jpeg" alt=""></a>                                        
                         <a class="theme_link" href="https://mon-verrier.votreartisanpro.fr">Tomate<br><img class="photo photo12" src="/images_vap/photos1/m12.jpeg" alt=""></a>                                        
                     </p>
-                    <p class="services__lambda_photos">
-                                                              
-                    </p>
                 </div>
             </div>
             <p>**************</p><br>
@@ -147,9 +144,9 @@
         <div class="conditions_generales">
             <a href="cgu.php">CGU</a>
             <span>-</span>
-            <a href="/cgv.php">CGV</a>
+            <a href="cgv.php">CGV</a>
             <span>-</span>
-            <a href="/mentions_legales.php">Mentions légales</a>
+            <a href="mentions_legales.php">Mentions légales</a>
         </div>
     </footer>
 <script src="/assets/vap/form.js"></script>
