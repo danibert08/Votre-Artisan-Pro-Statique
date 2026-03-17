@@ -10,7 +10,7 @@
     <link rel="canonical" href="<?= $canonical_url; ?>" />
     <title><?= $data['tag_title']; ?></title>
     <!-- Favicon standard -->
-    <link rel="shortcut icon" type="image/jpeg" sizes="32x32" href="<?= $data["favicon"] . '?' . $data["favicon"] . ': /assets/vap/favicon.jpeg'?>">
+    <link rel="shortcut icon" type="image/jpeg" sizes="32x32" href="<?= '/images/logo/logo.jpeg ?' . '/images/logo/logo.jpeg' . ': ../assets/vap/favicon.jpeg'?>">
     <!-- Solution de repli pour anciens navigateurs -->
     <link rel="shortcut icon" href="/assets/vap/favicon.ico" type="image/x-icon">
     <!-- Apple Touch Icon -->
