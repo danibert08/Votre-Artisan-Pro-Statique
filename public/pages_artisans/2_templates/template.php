@@ -10,13 +10,13 @@
     <link rel="canonical" href="<?= $canonical_url; ?>" />
     <title><?= $data['tag_title']; ?></title>
     <!-- Solution de repli pour anciens navigateurs -->
-    <link rel="shortcut icon" href="<?= file_exists('/pages_artisans' . $data['dossier'] 
+    <link rel="shortcut icon" href="<?= file_exists('pages_artisans/' . $data['dossier'] 
     .'/images/logo/logo.jpeg') ? 'pages_artisans/' . $data['dossier'] . '/images/logo/logo.jpeg'  :  '/assets/vap/favicon.jpeg'?> " type="image/x-icon">
     <!-- Favicon standard -->
-    <link rel="shortcut icon" type="image/jpeg" sizes="32x32" href="<?=  file_exists('/pages_artisans/' . $data['dossier'] . '/images/logo/logo.jpeg')  ?  'pages_artisans/' . $data['dossier'] . '/images/logo/logo.jpeg'  :  '/assets/vap/favicon.jpeg'?>">
+    <link rel="shortcut icon" type="image/jpeg" sizes="32x32" href="<?=  file_exists('pages_artisans/' . $data['dossier'] . '/images/logo/logo.jpeg')  ?  'pages_artisans/' . $data['dossier'] . '/images/logo/logo.jpeg'  :  '/assets/vap/favicon.jpeg'?>">
 
     <!-- Apple Touch Icon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="<?=  file_exists('/pages_artisans/' . $data['dossier'] . '/images/logo/logo.jpeg')  ?  'pages_artisans/' . $data['dossier'] . '/images/logo/logo.jpeg'  :  '/assets/vap/favicon.jpeg'?>">
+    <link rel="apple-touch-icon" sizes="180x180" href="<?=  file_exists('pages_artisans/' . $data['dossier'] . '/images/logo/logo.jpeg')  ?  'pages_artisans/' . $data['dossier'] . '/images/logo/logo.jpeg'  :  '/assets/vap/favicon.jpeg'?>">
     <link rel="stylesheet" href="../../assets/common_assets/css/reset.css" class="css">
     <link rel="stylesheet" href="../../assets/assets_artisans/css/style.css" class="css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
