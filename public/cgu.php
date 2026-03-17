@@ -72,8 +72,7 @@
        
     </main>
     <div class="en-tete__contact">
-        <div class="button" >
-            <img class="en-tete__contact_icone" src="/assets/common_assets/icones/telephone.svg" alt=""> 
+        <div class="button button-bottom" >
             <a class="en-tete__contact-text" href="/home.php">             
                 Retour
             </a>

@@ -33,7 +33,7 @@
             <h2>Nous vous simplifions la tâche :</h2>
             <p>Vous communiquez les informations ainsi que les photos, et nous nous occupons du reste.</p>
             <p>Vous n'avez rien d'autre à faire, et votre site sera en ligne dans les 24h (souvent moins)</p>
-            <p>Un site pour votre activité, adapté à tous les écrans, simple, efficace, prêt à l’emploi,
+            <p>Un site avec certificat SSl pour votre activité, adapté à tous les écrans, simple, efficace, prêt à l’emploi,
             et optimisé pour le référencement google.</p>
             <p>Le site comprend un menu, une en-tête avec image et logo, de une à trois sections avec pour chacune 10 photos, la localisation google map, une section tarif, une section qui suis-je, un formulaire de contact et les liens vers vos réseaux sociaux si vous en disposez.</p>
             <p>Vous bénéficiez d'un nom de domaine offert sous la forme : entreprise.votreartisanpro.fr</p>
@@ -80,7 +80,7 @@
             <p>**************</p><br>
             <p><u>Tarif unique sans coûts cachés :</u></p><br>
             <p>Une seule fois 49€ pour la réalisation.</p>
-            <p>Puis seulement 12,99€/mois pour l'hébergement, la maintenance, les mises a jour et les petites modifications.</p><br>
+            <p>Puis seulement 12,99€/mois pour l'hébergement, la maintenance, les mises à jour et les petites modifications.</p><br>
             <p>**************</p><br>
             <p><u>Vous êtes convaincus ? </u></p><br>
             <p>Alors remplissez dès à présent le formulaire ci-dessous.</p>
