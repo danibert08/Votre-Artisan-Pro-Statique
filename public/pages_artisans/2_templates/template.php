@@ -9,6 +9,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="canonical" href="<?= $canonical_url; ?>" />
     <title><?= $data['tag_title']; ?></title>
+    <!-- Favicon standard -->
+    <link rel="shortcut icon" type="image/png" sizes="32x32" href="/assets/vap/favicon.ico">
+    <!-- Solution de repli pour anciens navigateurs -->
+    <link rel="shortcut icon" href="/assets/vap/favicon.ico" type="image/x-icon">
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/vap/apple-touch-icon.png">
     <link rel="stylesheet" href="../../assets/common_assets/css/reset.css" class="css">
     <link rel="stylesheet" href="../../assets/assets_artisans/css/style.css" class="css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
