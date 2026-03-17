@@ -12,6 +12,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu Simple</title>
+    <!-- Favicon standard -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/vap/faviconvap-32x32.png">
+    <!-- Solution de repli pour anciens navigateurs -->
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/vap/apple-touch-icon.png">
     <link rel="stylesheet" href="assets/reset.css">
     <link rel="stylesheet" href="assets/assets_artisans/style.css">
     <link rel="stylesheet" href="assets/vap/style.css">
