@@ -18,7 +18,6 @@
     <link rel="shortcut icon" href="/assets/vap/favicon.ico" type="image/x-icon">
     <!-- Apple Touch Icon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/vap/apple-touch-icon.png">
-    <link rel="stylesheet" href="assets/reset.css">
     <link rel="stylesheet" href="assets/assets_artisans/style.css">
     <link rel="stylesheet" href="assets/vap/style.css">
 </head>

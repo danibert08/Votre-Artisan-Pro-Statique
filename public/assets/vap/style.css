@@ -1,4 +1,14 @@
 /* Mise en forme */
+
+@media(max-width: 500px){
+    html{
+        font-size: 62.5%;
+    }
+}
+    /* html{
+        font-size: 62.5%;
+    } */
+
 body { 
     margin: 0; font-family: Arial, sans-serif; 
     width:100%;
