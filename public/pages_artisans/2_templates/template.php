@@ -90,8 +90,8 @@
             <div class="en-tete__contact">
                 <div class="button" >
                     <img class="en-tete__contact_icone" src="/assets/common_assets/icones/telephone.svg" alt="">
-                    <a class="en-tete__contact-text" href="tel: <?= $data['telephone'] ?>">             
-                         <?=  implode(' ', str_split($data['telephone'], 3)); ?>
+                    <a class="en-tete__contact-text" href="tel: <?= substr($data['telephone'],2) ?>">             
+                         <?=  implode(' ', str_split($data['telephone'], 4)); ?>
                     </a>
                 </div>
             </div> 
