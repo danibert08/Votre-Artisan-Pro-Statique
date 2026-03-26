@@ -22,7 +22,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Création de sites vitrines gratuits, professionnels et sécurisés en 24h.  Découvrez nos modèles ! Vous êtes artisan ? Cette plateforme est pour vous !">
     <title>Gratuit :  votre site vitrine professionnel et sécurisé !</title>
-    <link rel="canonical" href="<?= $canonical_url; ?>" />
+    <link rel="canonical" href="votreartisanpro.fr" />
     <!-- Favicon standard -->
     <link rel="shortcut icon" type="image/png" sizes="32x32" href="/assets/vap/favicon.ico">
     <!-- Solution de repli pour anciens navigateurs -->
