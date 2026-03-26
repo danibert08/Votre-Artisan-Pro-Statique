@@ -20,7 +20,9 @@
         </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Votre artisan Pro : pour permettre aux artisans d'obtenir un site vitrine professionnel à prix mini</title>
+    <meta name="description" content="Création de sites vitrines gratuits, professionnels et sécurisés en 24h.  Découvrez nos modèles ! Vous êtes artisan ? Cette plateforme est pour vous !">
+    <title>Gratuit :  votre site vitrine professionnel et sécurisé !</title>
+    <link rel="canonical" href="<?= $canonical_url; ?>" />
     <!-- Favicon standard -->
     <link rel="shortcut icon" type="image/png" sizes="32x32" href="/assets/vap/favicon.ico">
     <!-- Solution de repli pour anciens navigateurs -->
@@ -39,11 +41,17 @@
     <main>
 
         <div>
-            <h1>Obtenez votre site professionnel clé en main pour votre activité artisanale</h1><br>
-            <h2>Votre Artisan Pro c'est quoi ?</h2>
-            <p>votreartisanpro.fr est la plateforme qui permet aux artisans d'obtenir une visibilté sur internet en complément de leurs réseaux sociaux, au travers d'un site internet à <b>prix mini </b>avec un <b>abonnement minimal</b> pour l'hébergement, la maintenance, les petites modifications, et les mises à jour, et le tout sans compétence technique particulière dans ce domaine.</p>
+            <h1>Site vitrine pour Artisans : </h1><br>
+            <h2>Activité d'artisan :</h2>
+            <p>Que vous soyez électricien, plombier, prothésiste ongulaire, coiffeur, maçon, peintre, plâtrier, couvreur, façadier, verrier, décorateur, créateur... quelque soit votre activité d'artisan, Votre Artisan Pro créé votre site vitrine rapidement et gratuitement.</p>
+            <h2>Votre ville : </h2>
+            <p>En tant qu'artisan, que vous exerciez aux Sables d'Olonne, à La Roche sur Yon, ou encore à Paris, Rennes, Lyon, Bordeaux, Nîmes ou Montpellier, ou même dans des communes plus petite comme Montluçon, Angoulême, Tarbes, ou Châteauroux par exemple, vous êtes élligibles à l'obtention d'un site vitrine professionnel créé par Votre Artisan Pro</p>
+            <h2>Votre site vitrine artisan :</h2>
+            <h3>votreartisanpro.fr : l'ami de l'artisan</h3>
+            <p>votreartisanpro.fr est la plateforme qui permet aux artisans d'obtenir une visibilté sur internet en complément de leurs réseaux sociaux, au travers d'un site internet à <b>gratuit</b> avec un <b>abonnement minimal</b> pour l'hébergement, la maintenance, les petites modifications, et les mises à jour, et le tout sans compétence technique particulière dans ce domaine.</p>
+            <h3>Artisan et réseaux sociaux :</h3>
             <p>En effet les réseaux sociaux permettent la fidélisation, alors qu'un site internet est plutôt destiné à apparaître dans les moteurs de recherche, afin de conquérir de nouveaux clients.</p><br>
-            <h2>Nous vous simplifions la tâche </h2>
+            <h2>Artisan : Un site vitrine sans contrainte ni compétence technique :</h2>
             <p>Vous communiquez les informations ainsi que les photos, et nous nous occupons du reste.</p>
             <p>Vous n'avez rien d'autre à faire, et votre site sera en ligne dans les 24h (souvent moins)</p>
             <p>Un site avec certificat SSL pour votre activité, adapté à tous les écrans, simple, efficace, prêt à l’emploi,
@@ -87,19 +95,21 @@
                     </p>
                 </div>
             </div>
+            <h2><u>Un tarif pensé pour les artisans !</u></h2>
+            <h3>Votre site vitrine pour zéro euros !</h3>
             <p>**************</p><br>
             <p><u>Tarif unique sans coûts cachés :</u></p><br>
-            <p>Une seule fois 49€ pour la réalisation.</p>
-            <p><strong>***************<br>Les frais de réalisation offerts aux 10 <br>premiers clients à l'occasion du lancement de la plateforme Votre Artisan Pro<br>************</strong></p>
-            <p>Puis seulement 12,99€/mois pour l'hébergement, la maintenance, les mises à jour et les petites modifications.</p><br>
+            <p>0€ : La réalisation est offerte ! Oui c'est gratuit ! Et il n'y a pas de piège !</p>
+            <p>Vous ne payerez que 12,99€/mois pour l'hébergement, la maintenance, les mises à jour et les petites modifications.</p><br>
             <p>**************</p><br>
-            <p><u>Vous êtes convaincus ? </u></p><br>
-            <p>Alors remplissez dès à présent le formulaire ci-dessous.</p>
+            <h2><u>Vous êtes convaincus ? Alors n'attendez plus !</u></h2>
+            <h3>Artisans : votre site vitrine d'ici demain !</h3>
+            <p>Remplissez dès à présent le formulaire ci-dessous.</p>
             <p>Dans la partie message, renseignez votre Siren, et en option vos textes par section, mais je peux m'en charger si vous préférez.</p>
-            <p>Puis adressez-moi 11 photos en format paysage par whatsApp au 07.45.06.34.58, ainsi que votre logo si vous en avez un.</p>
+            <p>Puis adressez-nous 11 photos en format paysage par whatsApp au 07.45.06.34.58, ainsi que votre logo si vous en avez un.</p>
             <p>**************</p>
             <p>Votre site internet sera en ligne dans les 24 heures</p>
-            <p>Vous recevrez ensuite un lien de paiement pour effectuer votre règlement</p>
+            <p>Vous recevrez ensuite un lien de paiement pour votre prélèvement mensuel</p>
             <p>**************</p>
         </div>
 

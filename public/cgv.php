@@ -40,12 +40,12 @@ nomdelartisan.votreartisanpro.fr.<br>
         <div>
             <h2>3. Tarifs</h2><br>
             <h3><u>3.1 Frais de création</u></h3><br>    
-            <p>49 € TTC payables à la commande.</p><br>
+            <p>0€ TTC payables à la commande.</p><br>
             <h3><u>3.2 Abonnement mensuel</u></h3><br>
             <p>12,99 € TTC par mois, sans engagement minimum.<br>
                 L’abonnement commence à la mise en ligne du site.<br>
-                Le premier mois est offert.<br>
-                Le premier paiement de l'abonnement interviendra de date à date le mois suivant celui de la mise en ligne</p><br>
+                <br>
+                Le premier paiement de l'abonnement interviendra dès la mise en ligne du site commandé</p><br>
             <h3><u>3.3 T.V.A.</u></h3><br>
             <p>Le prestataire exerçant sous le statut de la micro-entreprise, la  T.V.A. est non applicable selon l'article 293 B du C.G.I.</p><br>
 
